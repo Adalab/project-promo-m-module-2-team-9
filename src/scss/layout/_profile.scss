@@ -2,4 +2,10 @@
   background-color: #bfcdd0;
   box-sizing: border-box;
   padding: 38px 35px 40px 45px;
+  &__resetbutton {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+  }
 }
