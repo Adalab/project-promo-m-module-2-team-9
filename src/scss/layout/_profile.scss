@@ -24,7 +24,20 @@
     }
   }
   &__containercard {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
+    padding: 12px 0px 21px;
+    &__name {
+      font-style: bold;
+      font-size: 18px;
+      color: #114e4e;
+      line-height: 1.11;
+    }
+    &__img {
+      width: 240px;
+      height: 200px;
+    }
   }
 }
 .fa-trash-alt {
