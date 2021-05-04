@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid rgba(155, 155, 155, 0.6);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: $color-secondary;
+  }
+
+  &__logo {
+    margin-top: 10px;
+  }
+
+  &__logoImg {
+    height: 45px;
+    width: 115.9px;
+  }
+
+  @media (min-width: 1200px) {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+}
