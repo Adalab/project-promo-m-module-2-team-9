@@ -1,5 +1,16 @@
-form {
+.form {
   max-width: 400px;
+  color: $gunmetal;
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+  }
 
   .design,
   .share {
@@ -28,13 +39,13 @@ form {
   .colors__wrapper .palette__wrapper {
     display: flex;
     flex-flow: row wrap;
-  }
 
-  .color {
-    background-color: aqua;
-    border: thin solid red;
-    height: 30px;
-    width: 30px;
+    .color {
+      background-color: aqua;
+      border: thin solid red;
+      height: 30px;
+      width: 30px;
+    }
   }
 
   .share .share__button {
