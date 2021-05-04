@@ -1,0 +1,56 @@
+.container-profile {
+  background-color: #bfcdd0;
+  box-sizing: border-box;
+  padding: 38px 35px 40px 45px;
+  &__resetbutton {
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+    background-color: #bfcdd0;
+    padding: 6px 12px 5px 10px;
+    margin-bottom: 20px;
+    color: #54585a;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1, 67;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__text {
+      padding-left: 8px;
+    }
+  }
+  &__containercard {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 12px 0px 21px;
+    &__name {
+      font-style: bold;
+      font-size: 18px;
+      color: #114e4e;
+      line-height: 1.11;
+      font-family: "Montserrat";
+      padding: 21px 14px 2px 20px;
+    }
+    &__profesion {
+      font-family: "Montserrat";
+      font-size: 16px;
+      color: #54585a;
+      padding: 4px 0px 10px 20px;
+    }
+    &__img {
+      width: 240px;
+      height: 200px;
+    }
+  }
+}
+.fa-trash-alt {
+  width: 11px;
+  height: 20px;
+  color: #54585a;
+  padding: 4px 12px 5px 0;
+}
