@@ -1,7 +1,3 @@
-* {
-  outline: thin solid rgba(255, 0, 0, 0.37);
-}
-
 .form {
   color: $gunmetal;
   padding: 1.5rem;
@@ -14,7 +10,14 @@
     text-transform: uppercase;
 
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     gap: 0.5rem;
+
+    .fa-chevron-down {
+      position: absolute;
+      right: 1rem;
+    }
   }
 
   .design__expand {
@@ -41,9 +44,9 @@
       border-radius: 0.5rem;
       color: white;
       font-size: 18px;
-      text-transform: uppercase;
-
+      margin: 1rem 0;
       padding: 0.6rem 2rem;
+      text-transform: uppercase;
     }
   }
 }
