@@ -13,7 +13,14 @@
     font-family: $fontopensans;
     font-size: 18px;
     color: $gunmetal;
+    font-weight: 600;
     text-transform: uppercase;
+    padding-left: 51px;
+
+    .fa-chevron-down {
+      position: absolute;
+      right: 1rem;
+    }
   }
 
   &__text {
