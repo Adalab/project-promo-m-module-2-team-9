@@ -1,0 +1,49 @@
+form {
+  max-width: 400px;
+
+  .design,
+  .share {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
+
+  .design__shrink,
+  .share__shrink {
+    border: thin solid #ccc;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .design__expand {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .label,
+  .colors__wrapper .palette__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .color {
+    background-color: aqua;
+    border: thin solid red;
+    height: 30px;
+    width: 30px;
+  }
+
+  .share .share__button {
+    background-color: orangered;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
