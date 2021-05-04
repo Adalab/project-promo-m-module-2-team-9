@@ -1,6 +1,17 @@
 <main class="main">
   <section class="main__logoContainer">
-    <img src="https://placekitten.com/200/100" alt="logo" class="main__logo" />
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="https://placekitten.com/420/100"
+      />
+      <source srcset="https://placekitten.com/200/100" />
+      <img
+        src="https://placekitten.com/200/100"
+        alt="logo"
+        class="main__logo"
+      />
+    </picture>
     <div class="main__titleContainer">
       <h2 class="main__title">Crea tu tarjeta de visita</h2>
       <p class="main__paragraph">
