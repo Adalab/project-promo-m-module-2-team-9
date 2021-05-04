@@ -1,8 +1,10 @@
 <fieldset class="fill">
-  <h3>Rellena</h3>
+  <h3 class="fill__title">Rellena</h3>
   <form action="/signup" method="post">
     <div class="fill__contact">
-      <label for="fill__contact-name"> Nombre completo </label>
+      <label class="fill__text" for="fill__contact-name">
+        Nombre completo
+      </label>
       <input
         class="fill__contact-name"
         type="text"
@@ -12,7 +14,7 @@
       />
     </div>
     <div class="fill__contact">
-      <label for="fill__contact-role"> Puesto </label>
+      <label class="fill__text" for="fill__contact-role"> Puesto </label>
       <input
         class="fill__contact-role"
         type="text"
@@ -22,12 +24,19 @@
       />
     </div>
     <div class="fill__contact">
-      <label for="fill__contact-imagen"> Imagen del perfil </label>
-      <input class="fill__contact-image" type="image" id="image" name="image" />
+      <label class="fill__text" for="fill__contact-image">
+        Imagen del perfil
+      </label>
+      <input
+        class="fill__contact-image"
+        type="submit"
+        id="image"
+        name="image"
+      />
     </div>
 
     <div class="fill__contact">
-      <label for="fill__contact-email"> Email </label>
+      <label class="fill__text" for="fill__contact-email"> Email </label>
       <input
         class="fill__contact-email"
         type="email"
@@ -37,7 +46,7 @@
       />
     </div>
     <div class="fill__contact">
-      <label for="fill__contact-phone"> Teléfono </label>
+      <label class="fill__text" for="fill__contact-phone"> Teléfono </label>
       <input
         class="fill__contact-phone"
         type="phone"
@@ -47,7 +56,7 @@
       />
     </div>
     <div class="fill__contact">
-      <label for="fill__contact-linkedin"> Linkedin </label>
+      <label class="fill__text" for="fill__contact-linkedin"> Linkedin </label>
       <input
         class="fill__contact-linkedin"
         type="url"
@@ -57,7 +66,7 @@
       />
     </div>
     <div class="fill__contact">
-      <label for="fill__contact-github"> Github </label>
+      <label class="fill__text" for="fill__contact-github"> Github </label>
       <input
         class="fill__contact-github"
         type="url"
