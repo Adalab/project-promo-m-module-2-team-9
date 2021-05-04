@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85vh;
+  background-color: whitesmoke;
+
+  &__logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  &__x {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    color: rgb(243, 151, 118);
+  }
+
+  &__picturesContainer {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px rgb(243, 151, 118);
+  }
+
+  &__pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__pictureShare {
+    padding-right: 10px;
+  }
+
+  &__icon {
+    color: rgb(243, 151, 118);
+  }
+
+  &__buttonContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    border: solid 2px #099d8d;
+    border-radius: 22.5px;
+    background-color: #099d8d;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+}
