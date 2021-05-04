@@ -5,11 +5,11 @@
   &__resetbutton {
     border: solid 1px #ffffff;
     border-radius: 15px;
-    background-color: #bfcdd0;
+    background-color: $bfcdd-0-silver;
     padding: 6px 12px 5px 10px;
     margin-bottom: 20px;
-    color: #54585a;
-    font-family: "Open Sans";
+    color: $gunmetal;
+    font-family: $fontopensans;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -26,31 +26,33 @@
   &__containercard {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: $white-three;
     padding: 12px 0px 21px;
     &__name {
-      font-style: bold;
+      font-weight: bold;
       font-size: 18px;
-      color: #114e4e;
+      color: $dark-green-blue;
       line-height: 1.11;
-      font-family: "Montserrat";
+      font-family: $fontmontserrat;
       padding: 21px 14px 2px 20px;
     }
     &__profesion {
-      font-family: "Montserrat";
+      font-family: $fontmontserrat;
       font-size: 16px;
-      color: #54585a;
+      color: $gunmetal;
       padding: 4px 0px 10px 20px;
     }
     &__img {
       width: 240px;
       height: 200px;
+      background-size: cover;
+      position: center;
     }
   }
 }
 .fa-trash-alt {
   width: 11px;
   height: 20px;
-  color: #54585a;
-  padding: 4px 12px 5px 0;
+  color: $gunmetal;
+  padding: 2px 12px 5px 0;
 }
