@@ -4,7 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 85vh;
-  background-color: whitesmoke;
+  background-color: $white-four;
 
   &__logoContainer {
     display: flex;
@@ -13,20 +13,37 @@
     padding-bottom: 30px;
   }
 
-  &__x {
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  &__titleContainer {
     text-align: center;
+    line-height: normal;
     padding-top: 10px;
   }
 
   &__title {
-    padding-bottom: 10px;
-    color: rgb(243, 151, 118);
+    padding-bottom: 5px;
+    font-family: $fontmerriweather;
+    color: $dull-orange;
+  }
+
+  &__paragraph {
+    font-size: 12.8px;
+    color: $dark-green-blue;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   &__picturesContainer {
     display: flex;
     flex-direction: row;
-    border: solid 2px rgb(243, 151, 118);
+    justify-content: space-around;
+    border: solid 2px rgba(225, 115, 52, 0.21);
+    border-radius: 4px;
+    width: 268px;
+    height: 73.8px;
   }
 
   &__pictures {
@@ -34,21 +51,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  &__pictureShare {
-    padding-right: 10px;
   }
 
   &__icon {
-    color: rgb(243, 151, 118);
+    color: $dull-orange;
+    font-size: 22.4px;
   }
-
+  &__words {
+    color: $gunmetal;
+    font-size: 12.8px;
+    margin-top: 5px;
+  }
   &__buttonContainer {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
 
@@ -56,13 +71,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 150px;
-    border: solid 2px #099d8d;
+    height: 40px;
+    width: 130px;
+    border: solid 2px $dirty-blue;
     border-radius: 22.5px;
-    background-color: #099d8d;
+    background-color: $dirty-blue;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
