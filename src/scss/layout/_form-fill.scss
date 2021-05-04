@@ -1,13 +1,30 @@
 .fill {
-  max-width: 400px;
+  //   max-width: 400px;
   width: 320px;
   height: 668px;
   //   margin: 457px 0 0;
   //   padding: 27px 19px 30px 20px;
-  padding: 1rem;
+  //   padding: 1rem;
   display: flex;
   flex-flow: column wrap;
-  gap: 22.5px;
+  gap: 20px;
+
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    .fa-chevron-up {
+      position: absolute;
+      right: 19px;
+    }
+
+    .fa-keyboard {
+      position: absolute;
+      left: 20px;
+      color: $dull-orange;
+    }
+  }
 
   &__title {
     font-family: $fontopensans;
@@ -15,18 +32,14 @@
     color: $gunmetal;
     font-weight: 600;
     text-transform: uppercase;
-    padding-left: 51px;
-
-    .fa-chevron-down {
-      position: absolute;
-      right: 1rem;
-    }
+    padding-left: 21px;
   }
 
   &__text {
     font-size: 14px;
     font-family: $fontopensans;
     color: #114e4e;
+    line-height: 1.43;
   }
 
   &__contact {
@@ -39,9 +52,15 @@
     &-github {
       width: 281px;
       height: 30px;
-      //   margin-top: 20px;
+      margin-top: 7px;
       border: solid 1px $hospital-green;
       display: flex;
     }
+  }
+  ::placeholder {
+    color: $pinkish-grey;
+    font-size: 14px;
+    font-family: $fontopensans;
+    padding: 3px 0 7px 9px;
   }
 }
