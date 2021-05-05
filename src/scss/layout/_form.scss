@@ -15,11 +15,13 @@
     gap: 0.5rem;
 
     .fa-object-ungroup,
+    .fa-keyboard,
     .fa-share-alt {
       color: $dull-orange;
     }
 
-    .fa-chevron-down {
+    .fa-chevron-down,
+    .fa-chevron-up {
       position: absolute;
       right: 1.5rem;
     }
@@ -89,5 +91,46 @@
       padding: 0.6rem 2rem;
       text-transform: uppercase;
     }
+  }
+}
+
+.fill {
+  //   max-width: 400px;
+  width: 320px;
+  height: 668px;
+  //   margin: 457px 0 0;
+  //   padding: 27px 19px 30px 20px;
+  //   padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  &__text {
+    font-size: 14px;
+    font-family: $fontopensans;
+    color: #114e4e;
+    line-height: 1.43;
+  }
+
+  &__contact {
+    &-name,
+    &-role,
+    &-image,
+    &-email,
+    &-phone,
+    &-linkedin,
+    &-github {
+      width: 281px;
+      height: 30px;
+      margin-top: 7px;
+      border: solid 1px $hospital-green;
+      display: flex;
+    }
+  }
+  ::placeholder {
+    color: $pinkish-grey;
+    font-size: 14px;
+    font-family: $fontopensans;
+    padding: 3px 0 7px 9px;
   }
 }
