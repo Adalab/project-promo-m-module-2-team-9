@@ -2,8 +2,10 @@
   font-family: $fontopensans;
 }
 
-.profile__wrapper .form {
-  padding: 1.5rem 3rem;
+@media (max-width: 768px) {
+  .profile__wrapper .form {
+    padding: 1.5rem 3rem;
+  }
 }
 
 @media (min-width: 768px) {
