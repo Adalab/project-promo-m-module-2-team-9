@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Profile</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/main.css" />
@@ -23,173 +23,159 @@
       <h1></h1>
     </header>
 
-    <section class="container-profile">
-      <button class="container-profile__resetbutton">
-        <i class="far fa-trash-alt"></i>
-        <h3 class="container-profile__resetbutton__text">reset</h3>
-      </button>
-      <div class="container-profile__containercard">
-        <h2 class="container-profile__containercard__name">Nombre Apellido</h2>
-        <h3 class="container-profile__containercard__profesion">
-          Front-end developer
-        </h3>
-        <img
-          src="../assets/images/foto-lucia.jpg"
-          alt="Picture profile"
-          class="container-profile__containercard__img"
-        />
-        RRSS
-      </div>
-    </section>
 
-    <form action="" method="POST" class="form">
-        <fieldset class="design">
-
-            <div class="fieldset__title">
-                <i class="far fa-object-ungroup"></i>
-                <h2>Diseña</h2>
-                <i class="fas fa-chevron-down"></i>
-            </div>
+    <div class="profile__wrapper">
+      <section class="container-profile">
 
 
-            <div class="design__expand">
-                <h3>Colores</h3>
+        <button class="container-profile__resetbutton">
+          <i class="far fa-trash-alt"></i>
+          <h3 class="container-profile__resetbutton__text">reset</h3>
+        </button>
 
-                <div class="colors__wrapper">
-
-                    <label class="label" for="palette1">
-                        <input type="radio" name="colors" id="palette1">
-                        <ul class="palette__wrapper">
-                            <li class="color palette1__color1"></li>
-                            <li class="color palette1__color2"></li>
-                            <li class="color palette1__color3"></li>
-                        </ul>
-                    </label>
-
-                    <label class="label" for="palette2">
-                        <input type="radio" name="colors" id="palette2">
-                        <ul class="palette__wrapper">
-                            <li class="color palette2__color1"></li>
-                            <li class="color palette2__color2"></li>
-                            <li class="color palette2__color3"></li>
-                        </ul>
-                    </label>
-
-                    <label class="label" for="palette3">
-                        <input type="radio" name="colors" id="palette3">
-                        <ul class="palette__wrapper">
-                            <li class="color palette3__color1"></li>
-                            <li class="color palette3__color2"></li>
-                            <li class="color palette3__color3"></li>
-                        </ul>
-                    </label>
-                </div>
-
-            </div>
-
-
-        </fieldset>
-        <fieldset class="fill">
-          <div class="fill__header">
-            <i class="far fa-keyboard"></i>
-            <h3 class="fill__title">Rellena</h3>
-            <i class="fas fa-chevron-up"></i>
+        <div class="container-profile__containercard">
+          <div class="profile__name">
+            <h2 class="container-profile__containercard__name">Nombre Apellido</h2>
+            <h3 class="container-profile__containercard__profesion">
+              Front-end developer
+            </h3>
           </div>
 
-          <form action="/signup" method="post">
+          <img src="../assets/images/foto-lucia.jpg" alt="Picture profile" class="container-profile__containercard__img" />
+
+          <div class="container-profile__containerrrss">
+            <a class="container-profile__containerrrss__rrss">
+              <i class="fas fa-mobile-alt"></i></a>
+            <a class="container-profile__containerrrss__rrss">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a class="container-profile__containerrrss__rrss">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="container-profile__containerrrss__rrss">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <form action="" method="POST" class="form">
+          <fieldset class="design">
+
+              <div class="fieldset__title">
+                  <i class="far fa-object-ungroup"></i>
+                  <h2>Diseña</h2>
+                  <i class="fas fa-chevron-down fa-chevron-up"></i>
+              </div>
+
+
+              <div class="design__expand">
+                  <h3>Colores</h3>
+
+                  <div class="colors__wrapper">
+
+                      <label class="label" for="palette1">
+                          <input type="radio" name="colors" id="palette1">
+                          <ul class="palette__wrapper">
+                              <li class="color palette1__color1"></li>
+                              <li class="color palette1__color2"></li>
+                              <li class="color palette1__color3"></li>
+                          </ul>
+                      </label>
+
+                      <label class="label" for="palette2">
+                          <input type="radio" name="colors" id="palette2">
+                          <ul class="palette__wrapper">
+                              <li class="color palette2__color1"></li>
+                              <li class="color palette2__color2"></li>
+                              <li class="color palette2__color3"></li>
+                          </ul>
+                      </label>
+
+                      <label class="label" for="palette3">
+                          <input type="radio" name="colors" id="palette3">
+                          <ul class="palette__wrapper">
+                              <li class="color palette3__color1"></li>
+                              <li class="color palette3__color2"></li>
+                              <li class="color palette3__color3"></li>
+                          </ul>
+                      </label>
+                  </div>
+
+              </div>
+
+
+          </fieldset>
+          <fieldset class="fill">
+
+            <div class="fieldset__title">
+              <i class="far fa-keyboard"></i>
+              <h2>Rellena</h2>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+
+
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-name">
                 Nombre completo
               </label>
-              <input
-                class="fill__contact-name"
-                type="text"
-                id="fullname"
-                name="fullname"
-                placeholder="Ej: Sally Jill"
-              />
+              <input class="fill__contact-name" type="text" id="fullname" name="fullname" placeholder="Ej: Sally Jill" />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-role"> Puesto </label>
-              <input
-                class="fill__contact-role"
-                type="text"
-                id="role"
-                name="role"
-                placeholder="Ej: Front- end unicorn"
-              />
+              <input class="fill__contact-role" type="text" id="role" name="role" placeholder="Ej: Front- end unicorn" />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-image">
                 Imagen del perfil
               </label>
-              <input
-                class="fill__contact-image"
-                type="submit"
-                id="image"
-                name="image"
-              />
+
+              <input class="fill__contact-image" type="file" id="image" name="image" />
             </div>
 
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-email"> Email </label>
-              <input
-                class="fill__contact-email"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Ej: sally-hill@gmail.com"
-              />
+              <input class="fill__contact-email" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-phone"> Teléfono </label>
-              <input
-                class="fill__contact-phone"
-                type="phone"
-                id="phone"
-                name="phone"
-                placeholder="Ej: 555-55-55-55"
-              />
+              <input class="fill__contact-phone" type="phone" id="phone" name="phone" placeholder="Ej: 555-55-55-55" />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-linkedin"> Linkedin </label>
-              <input
-                class="fill__contact-linkedin"
-                type="url"
-                id="linkedin"
-                name="linkedin"
-                placeholder="Ej: linkedin.com/salli.hill"
-              />
+              <input class="fill__contact-linkedin" type="url" id="linkedin" name="linkedin"
+                placeholder="Ej: linkedin.com/salli.hill" />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-github"> Github </label>
-              <input
-                class="fill__contact-github"
-                type="url"
-                id="github"
-                name="github"
-                placeholder="Ej: @sally-hill"
-              />
-            </div>
-          </form>
-        </fieldset>
-
-        <fieldset class="share">
-
-            <div class="fieldset__title">
-                <i class="fas fa-share-alt"></i>
-                <h2>Comparte</h2>
-                <i class="fas fa-chevron-down"></i>
+              <input class="fill__contact-github" type="url" id="github" name="github" placeholder="Ej: @sally-hill" />
             </div>
 
+          </fieldset>
+          <fieldset class="share">
 
-            <button class="share__button" type="submit"><i class="far fa-address-card">&nbsp;&nbsp;</i>Crear tarjeta</button>
+              <div class="fieldset__title">
+                  <i class="fas fa-share-alt"></i>
+                  <h2>Comparte</h2>
+                  <i class="fas fa-chevron-down fa-chevron-up"></i>
+              </div>
 
-        </fieldset>
-    </form>
+              <div class="share__expand">
+                  <button class="share__button" type="submit"><i class="far fa-address-card">&nbsp;&nbsp;</i>Crear
+                      tarjeta</button>
+
+                  <div>
+                      <h3>La tarjeta ha sido creada:</h3>
+                      <a href="">enlace</a>
+                      <button class="share__button--twitter">Compartir en Twitter</button>
+                  </div>
+              </div>
+          </fieldset>
+      </form>
+    </div>
+
     <footer class="footer">
       <div class="footer__container">
-        <small> Nombre grupo &copy; 2021</small>
+        <small class="footer__copy"> Nombre grupo &copy; 2021</small>
         <a href="https://adalab.es/" title="Adalab" class="footer__logo">
           <img
             src="./assets/images/logo-adalab.png"
