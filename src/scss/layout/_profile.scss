@@ -29,6 +29,7 @@
     width: 240px;
     box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 black;
     background-color: $white-three;
+    padding-top: 1rem;
 
     &__name {
       font-weight: bold;
@@ -36,17 +37,18 @@
       color: $dark-green-blue;
       line-height: 1.11;
       font-family: $fontmontserrat;
-      padding: 21px 14px 2px 20px;
+      //padding: 21px 14px 2px 20px;
     }
     &__profesion {
       font-family: $fontmontserrat;
       font-size: 16px;
       color: $gunmetal;
-      padding: 4px 0px 10px 20px;
+      //padding: 4px 0px 10px 20px;
     }
     &__img {
       width: 240px;
       height: 200px;
+      margin-top: 10px;
       background-size: cover;
       position: center;
     }
@@ -78,4 +80,8 @@
   height: 20px;
   color: $gunmetal;
   padding: 2px 12px 5px 0;
+}
+.border {
+  padding-left: 1rem;
+  border-left: $dirty-blue 5px solid;
 }
