@@ -1,3 +1,18 @@
 :root {
   font-family: $fontopensans;
 }
+
+.profile__wrapper .form {
+  padding: 1.5rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .profile__wrapper {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1.5rem 3rem;
+    background: linear-gradient($white-four, $white-three);
+  }
+}

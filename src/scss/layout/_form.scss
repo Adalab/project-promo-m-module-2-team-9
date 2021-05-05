@@ -1,6 +1,5 @@
 .form {
   color: $gunmetal;
-  padding: 1.5rem;
 
   .fieldset__title {
     border-bottom: thin solid #ccc;
@@ -18,12 +17,6 @@
     .fa-keyboard,
     .fa-share-alt {
       color: $dull-orange;
-    }
-
-    .fa-chevron-down,
-    .fa-chevron-up {
-      position: absolute;
-      right: 1.5rem;
     }
   }
 

@@ -1,7 +1,12 @@
 .container-profile {
   background-color: $bfcdd-0-silver;
-  box-sizing: border-box;
   padding: 38px 35px 40px 45px;
+
+  @media (min-width: 768px) {
+    border-radius: 1rem;
+    padding-top: 45vh;
+    width: 329px;
+  }
   &__resetbutton {
     border: solid 1px $white-three;
     border-radius: 15px;
@@ -27,23 +32,21 @@
     display: flex;
     flex-direction: column;
     width: 240px;
-    box-shadow: 0 1px 10px 0 black, 0 1px 3px 0 black;
+    box-shadow: 0px 0px 8px $black-32;
     background-color: $white-three;
     padding-top: 1rem;
 
     &__name {
-      font-weight: bold;
+      font-weight: 900;
       font-size: 18px;
       color: $dark-green-blue;
-      line-height: 1.11;
       font-family: $fontmontserrat;
-      //padding: 21px 14px 2px 20px;
     }
     &__profesion {
       font-family: $fontmontserrat;
       font-size: 16px;
       color: $gunmetal;
-      //padding: 4px 0px 10px 20px;
+      line-height: 1.75;
     }
     &__img {
       width: 240px;
@@ -54,6 +57,7 @@
     }
   }
   &__containerrrss {
+    color: $dark-green-blue;
     display: flex;
     margin-left: 10px;
     margin-bottom: 12px;
