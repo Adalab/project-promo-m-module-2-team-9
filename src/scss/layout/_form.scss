@@ -83,6 +83,20 @@
       margin: 1rem 0;
       padding: 0.6rem 2rem;
       text-transform: uppercase;
+
+      &--twitter {
+        background-color: $azure;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        padding: 0.3rem 1.5rem;
+      }
+    }
+
+    &__expand {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
     }
   }
 }
