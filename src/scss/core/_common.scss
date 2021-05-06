@@ -12,8 +12,7 @@
   .profile__wrapper {
     display: flex;
     flex-flow: row-reverse nowrap;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
     padding: 1.5rem 3rem;
     background: linear-gradient($white-four, $white-three);
   }

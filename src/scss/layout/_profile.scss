@@ -8,6 +8,10 @@
 
   @media (min-width: 768px) {
     border-radius: 1rem;
+    width: 50%;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
   }
 
   &__resetbutton {
