@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    min-height: calc(15vh - 1px);
   }
 
   &__copy {
@@ -17,7 +17,7 @@
   }
 
   &__logo {
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   &__logoImg {
@@ -27,12 +27,18 @@
 
   @media (min-width: 768px) {
     &__container {
-      height: 8vh;
+      min-height: calc(8vh - 1px);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin-right: 50px;
       margin-left: 50px;
+    }
+  }
+
+  @media (max-height: 500px) and (orientation: landscape) {
+    &__container {
+      min-height: calc(25vh - 1px);
     }
   }
 }
