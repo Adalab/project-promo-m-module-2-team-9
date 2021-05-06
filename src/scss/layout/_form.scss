@@ -80,7 +80,7 @@
       border-radius: 0.5rem;
       color: white;
       font-size: 18px;
-      margin: 1rem 0;
+      margin: 3rem 0;
       padding: 0.6rem 2rem;
       text-transform: uppercase;
 
@@ -93,10 +93,12 @@
       }
     }
 
-    &__expand {
+    &__expand,
+    .card--created {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
+      gap: 0.5rem;
     }
   }
 }
