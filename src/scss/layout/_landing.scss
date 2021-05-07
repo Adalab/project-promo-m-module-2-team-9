@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 85vh;
+  min-height: 85vh;
   background-color: $white-four;
 
   &__logoContainer {
@@ -84,7 +84,7 @@
 
   @media (min-width: 768px) {
     & {
-      height: 92vh;
+      min-height: 92vh;
       justify-content: space-between;
     }
 
@@ -94,6 +94,20 @@
 
     &__picturesContainer {
       margin-bottom: auto;
+    }
+  }
+  @media (max-height: 500px) and (orientation: landscape) {
+    &__ {
+      min-height: 75vh;
+    }
+
+    &__logoContainer {
+      padding-top: 30px;
+    }
+
+    &__buttonContainer {
+      padding-top: 35px;
+      padding-bottom: 25px;
     }
   }
 }
