@@ -1,7 +1,7 @@
 'use strict';
 
 const menu = document.querySelector (".js-formcontainer-desing");
-const design = document.querySelector (".design");
+const design = document.querySelector (".js-desing");
 
 function expand (){
 menu.classList.toggle('hidden')
