@@ -1,5 +1,10 @@
 .form {
   color: $gunmetal;
+  @media (min-width: 768px) {
+    & {
+      width: calc(40% - 20px);
+    }
+  }
 
   .fieldset__button {
     border-bottom: thin solid #ccc;
@@ -112,7 +117,7 @@
 
 .fill {
   //   max-width: 400px;
-  height: 668px;
+  //height: 668px;
   //   margin: 457px 0 0;
   //   padding: 27px 19px 30px 20px;
   //   padding: 1rem;
@@ -148,4 +153,28 @@
     font-family: $fontopensans;
     padding: 3px 0 7px 9px;
   }
+}
+
+.arrowPointer {
+  transform: rotate(180deg);
+}
+.none {
+  display: none;
+}
+.down {
+  transform: rotate(180deg);
+}
+.tooltip {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 200px;
+}
+.tooltipParagraph {
+  text-align: center;
+  color: black;
+  line-height: 1.5em;
 }
