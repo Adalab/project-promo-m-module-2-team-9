@@ -1,13 +1,27 @@
 'use strict';
 
-const menu = document.querySelector (".js-formcontainer-desing");
+const menudesing = document.querySelector (".js-formcontainer-desing");
+const menufield = document.querySelector (".js-formcontainer-field");
+const menushare = document.querySelector (".js-formcontainer-share")
+const field = document.querySelector (".js-field");
 const design = document.querySelector (".js-desing");
-const iconmenu = document.querySelector (".fa-chevron-up");
+const share = document.querySelector ("js-share");
+const iconmenudesing = document.querySelector (".fa-chevron-up");
 
-function expand (){
-menu.classList.toggle('hidden')
+
+function expanddesing (){
+menudesing.classList.toggle('hidden')
 iconmenu.classList.toggle('jsmenu')
 }
+function expandfield (){
+    menufield.classList.toggle('hidden')
+}
+function expandshare (){
+menushare.classList.toggle('hidden')
+}
+    
 
-design.addEventListener ('click', expand)
+design.addEventListener ('click', expanddesing)
+field.addEventListener ('click', expandfield)
+share.addEventListener ('click', expandshare)
 
