@@ -112,13 +112,14 @@
 
 .fill {
   //   max-width: 400px;
-  height: 668px;
+  // height: 668px;
   //   margin: 457px 0 0;
   //   padding: 27px 19px 30px 20px;
   //   padding: 1rem;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  padding-bottom: 30px;
 
   &__text {
     font-size: 14px;
