@@ -1,19 +1,19 @@
 'use strict';
-function expanddesing (){
+function handleExpandDesing (){
 menudesing.classList.toggle('hidden')
 iconmenu.classList.toggle('jsmenu')
 };
 
-function expandfield () {
+function handleExpandField () {
 menufield.classList.toggle ('hidden')
 iconmenu2.classList.toggle('jsmenu')
 };
 
-function expandshare () {
+function handelExpandShare () {
     menushare.classList.toggle ('hidden')
     iconmenu3.classList.toggle('jsmenu')
     };
 
-design.addEventListener ('click', expanddesing)
-field.addEventListener ('click', expandfield)
-share.addEventListener ('click', expandshare)
+design.addEventListener ('click', handleExpandDesing)
+field.addEventListener ('click', handleExpandField)
+share.addEventListener ('click', handelExpandShare)
