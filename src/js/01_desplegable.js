@@ -35,16 +35,16 @@ const nameProfile = document.querySelector(".name_js");
 const nameContact = document.querySelector(".fill__contact-name");
 const nameValue = nameContact.value;
 
-nameProfile.innerHTML = nameContact.addEventListener(
-  "change",
-  nameProfileaction
-);
-
 function nameProfileaction() {
-  // nameContact.classList.toggle("fill__contact-name");
-  if (nameProfile.classList.contains("fill__contact")) {
-    nameProfile.classList.remove("fill__contact-name");
-  } else {
-    nameProfile === nameValue;
-  }
+ 
+  const inputValue = 
+  // // nameContact.classList.toggle("fill__contact-name");
+  // if (nameContact) {
+  //   nameProfile.innerHTMl = nameValue;
+  // }
+
+  // // if (nameProfile.classList.contains("fill__contact-name")) {
+  // //   nameProfile.classList.remove("fill__contact-name");
 }
+
+nameContact.addEventListener("change", nameProfileaction);
