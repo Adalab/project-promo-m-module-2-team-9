@@ -1,27 +1,21 @@
 .footer {
   border-top: 1px solid $white-two;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(15vh - 1px);
-  }
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
 
   &__copy {
     color: $brownish-grey;
     opacity: 0.5;
     font-size: 14px;
-    line-height: 20px;
-  }
-
-  &__logo {
-    margin-top: 8px;
   }
 
   &__logoImg {
-    height: 40px;
     width: 103px;
   }
 

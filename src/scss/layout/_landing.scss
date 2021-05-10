@@ -1,9 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  height: 100vh;
   background-color: $white-four;
 
   &__logoContainer {
