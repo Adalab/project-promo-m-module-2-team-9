@@ -1,8 +1,11 @@
 .form {
   color: $gunmetal;
 
-  .fieldset__button {
+  fieldset {
     border-bottom: thin solid #ccc;
+  }
+
+  .fieldset__button {
     font-weight: 600;
     font-size: 18px;
     padding: 1rem 0;
@@ -43,6 +46,7 @@
       .palette__wrapper {
         display: flex;
         margin: 0.3rem 0;
+        align-items: center;
 
         .color {
           height: 25px;
@@ -124,10 +128,14 @@
     font-size: 14px;
     font-family: $fontopensans;
     color: #114e4e;
-    line-height: 1.43;
   }
 
   &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+
     &-name,
     &-role,
     &-image,
@@ -135,17 +143,13 @@
     &-phone,
     &-linkedin,
     &-github {
-      width: 281px;
-      height: 30px;
-      margin-top: 7px;
+      padding: 0.4rem;
       border: solid 1px $hospital-green;
-      display: flex;
     }
   }
   ::placeholder {
     color: $pinkish-grey;
     font-size: 14px;
     font-family: $fontopensans;
-    padding: 3px 0 7px 9px;
   }
 }
