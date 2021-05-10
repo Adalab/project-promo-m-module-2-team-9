@@ -5,9 +5,18 @@
   align-items: center;
   gap: 1rem;
 
-  padding: 1rem;
+  padding: 0.8rem;
   position: absolute;
+  bottom: 0;
   width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2.4rem;
+  }
 
   &__copy {
     color: $brownish-grey;
@@ -17,22 +26,5 @@
 
   &__logoImg {
     width: 103px;
-  }
-
-  @media (min-width: 768px) {
-    &__container {
-      min-height: calc(8vh - 1px);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 50px;
-      margin-left: 50px;
-    }
-  }
-
-  @media (max-height: 500px) and (orientation: landscape) {
-    &__container {
-      min-height: calc(25vh - 1px);
-    }
   }
 }
