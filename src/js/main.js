@@ -5,7 +5,7 @@ let selectionDesign = document.querySelector(".js-design");
 let selectionDesignButton = document.querySelector(".js-designButton");
 function collapseValidationDesign() {
   selectionDesign.classList.toggle("none");
-  selectionDesignButton.classList.toggle("down");
+  selectionDesignButton.classList.toggle("arrowPointer");
 }
 selectionDesignButton.addEventListener("click", collapseValidationDesign);
 
@@ -22,7 +22,7 @@ function collapseValidationFill(e) {
     }, 3000);
   } else {
     selectionFill.classList.toggle("none");
-    selectionFillButton.classList.toggle("down");
+    selectionFillButton.classList.toggle("arrowPointer");
   }
 }
 selectionFillButton.addEventListener("click", validateDesignSection);
@@ -36,7 +36,7 @@ function collapseValidationShare() {
     messageShare.classList.toggle("none");
   } else {
     selectionShare.classList.toggle("none");
-    selectionShareButton.classList.toggle("down");
+    selectionShareButton.classList.toggle("arrowPointer");
   }
 }
 selectionShareButton.addEventListener("click", collapseValidationShare);
