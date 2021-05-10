@@ -75,11 +75,13 @@
     &__rrss {
       width: 32px;
       height: 32px;
+      color: $dark-green-blue;
       border: $hospital-green solid 2px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-decoration: none;
     }
   }
 }
