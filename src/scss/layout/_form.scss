@@ -1,8 +1,13 @@
+.js-collapse {
+  display: none;
+}
+
 .form {
   color: $gunmetal;
 
   .fieldset__button {
     border-bottom: thin solid #ccc;
+    cursor: pointer;
     font-weight: 600;
     font-size: 18px;
     padding: 1rem 0;
@@ -81,6 +86,14 @@
   }
 
   .share {
+    &__expand,
+    .card--created {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
     &__button {
       background-color: $dull-orange;
       border: none;
@@ -98,14 +111,6 @@
         color: white;
         padding: 0.3rem 1.5rem;
       }
-    }
-
-    &__expand,
-    .card--created {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      gap: 0.5rem;
     }
   }
 }
