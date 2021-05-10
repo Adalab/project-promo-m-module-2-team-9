@@ -40,7 +40,7 @@ function handleProfileChange(ev) {
   const inputChanged = ev.target;
   const changedValue = inputChanged.value;
 
-  if (inputChanged.name === "name") {
+  if (nameProfile === "Nombre Apellido") {
     nameProfile.innerHTML = nameValue;
   }
 
