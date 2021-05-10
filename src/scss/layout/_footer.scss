@@ -1,44 +1,30 @@
 .footer {
   border-top: 1px solid $white-two;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
 
-  &__container {
+  padding: 0.8rem;
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+
+  @media (min-width: 768px) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
-    min-height: calc(15vh - 1px);
+    justify-content: space-between;
+    padding: 0.8rem 2.4rem;
   }
 
   &__copy {
     color: $brownish-grey;
     opacity: 0.5;
     font-size: 14px;
-    line-height: 20px;
-  }
-
-  &__logo {
-    margin-top: 8px;
   }
 
   &__logoImg {
-    height: 40px;
     width: 103px;
-  }
-
-  @media (min-width: 768px) {
-    &__container {
-      min-height: calc(8vh - 1px);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 50px;
-      margin-left: 50px;
-    }
-  }
-
-  @media (max-height: 500px) and (orientation: landscape) {
-    &__container {
-      min-height: calc(25vh - 1px);
-    }
   }
 }
