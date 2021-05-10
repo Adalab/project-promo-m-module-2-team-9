@@ -5,8 +5,10 @@ function handelChangeform (ev)  {
         previewNameElemento.innerHTML = changedValue;
         
     }
-    else (input)
-   
+    else if ( inputChanged.name === 'role' ) {
+        previewRoleElemento.innerHTML = changedValue;
+    }
+    
 }
 
 

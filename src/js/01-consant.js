@@ -14,6 +14,8 @@ const iconmenu3 = document.querySelector (".js-3");
 
 //PROFILE DESING/
 const form = document.querySelector (".js-form");
-const previewNameElemento = document.querySelector (".js-nameprofile");
+const previewNameElemento = document.querySelector (".js-nameProfile");
+const previewRoleElemento = document.querySelector (".js-rolProfile");
+
 
 console.log (previewNameElemento);
