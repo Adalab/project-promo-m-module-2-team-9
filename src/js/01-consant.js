@@ -16,6 +16,8 @@ const iconmenu3 = document.querySelector (".js-3");
 const form = document.querySelector (".js-form");
 const previewNameElemento = document.querySelector (".js-nameProfile");
 const previewRoleElemento = document.querySelector (".js-rolProfile");
+const previewMailElemento = document.querySelector (".js-mail");
+const previewLinkedinElemento = document.querySelector (".js-linkedin");
 
 
 console.log (previewNameElemento);
