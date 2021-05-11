@@ -1,5 +1,10 @@
 .form {
   color: $gunmetal;
+  @media (min-width: 768px) {
+    & {
+      width: calc(40% - 20px);
+    }
+  }
 
   fieldset {
     border-bottom: thin solid #ccc;
@@ -116,14 +121,19 @@
 
 .fill {
   //   max-width: 400px;
-  height: 640px;
 
   //   margin: 457px 0 0;
   //   padding: 27px 19px 30px 20px;
   //   padding: 1rem;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 20px;
+  //display: flex;
+  //flex-flow: column wrap;
+  // gap: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+  }
 
   &__text {
     font-size: 14px;
@@ -154,41 +164,24 @@
     font-family: $fontopensans;
   }
 }
-.fas {
-  cursor: pointer;
-}
 
-//JAVASCRIPT
-
-.fas_js {
-  transform: rotate(180deg);
-}
-
-.fill_js {
-  visibility: hidden;
-}
-
-.fill__contact-image {
+.none {
   display: none;
 }
-
-.js__profile-preview {
-  width: 30px;
-  height: 30px;
-  border: solid 1px $hospital-green;
-  position: absolute;
-  margin-left: 11rem;
-  margin-top: 27px;
+.arrowPointer {
+  transform: rotate(180deg);
 }
-
-.js__profile-trigger {
-  width: 140px;
-  height: 30px;
-  font-family: $fontopensans;
-  font-size: 14px;
-  color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 4px 0 var($dark-green-blue);
-  background-color: #e17334;
-  border: solid 1px white;
+.tooltip {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 200px;
+}
+.tooltipParagraph {
+  text-align: center;
+  color: black;
+  line-height: 1.5em;
 }
