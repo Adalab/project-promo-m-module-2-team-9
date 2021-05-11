@@ -37,9 +37,9 @@ const nameContact = document.querySelector(".fill__contact-name");
 const nameValue = nameContact.value;
 
 function handleProfileChange(ev) {
-  const inputChanged = ev.target;
-  const changedValue = inputChanged.value;
-  if (inputChanged.name === "name") {
+  const nameChanged = ev.target;
+  const changedValue = nameChanged.value;
+  if (nameChanged.name === "name") {
     nameProfile.innerHTML = changedValue;
   }
 }
