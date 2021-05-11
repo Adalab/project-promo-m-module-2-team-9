@@ -1,5 +1,10 @@
 .form {
   color: $gunmetal;
+  @media (min-width: 768px) {
+    & {
+      width: calc(40% - 20px);
+    }
+  }
 
   fieldset {
     border-bottom: thin solid #ccc;
@@ -116,14 +121,19 @@
 
 .fill {
   //   max-width: 400px;
-  height: 640px;
 
   //   margin: 457px 0 0;
   //   padding: 27px 19px 30px 20px;
   //   padding: 1rem;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 20px;
+  //display: flex;
+  //flex-flow: column wrap;
+  // gap: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+  }
 
   &__text {
     font-size: 14px;
@@ -153,4 +163,25 @@
     font-size: 14px;
     font-family: $fontopensans;
   }
+}
+
+.none {
+  display: none;
+}
+.arrowPointer {
+  transform: rotate(180deg);
+}
+.tooltip {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 200px;
+}
+.tooltipParagraph {
+  text-align: center;
+  color: black;
+  line-height: 1.5em;
 }
