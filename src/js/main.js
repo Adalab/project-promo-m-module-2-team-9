@@ -30,15 +30,18 @@ selectionFillButton.addEventListener("click", collapseValidationFill);
 
 let selectionShare = document.querySelector(".js-share");
 let selectionShareButton = document.querySelector(".js-shareButton");
-let messageShare = document.querySelector(".js-tooltipShare");
+//let messageShare = document.querySelector(".js-tooltipShare");
 function collapseValidationShare() {
-  if (validationDesign === false || validationFill === false) {
-    messageShare.classList.toggle("none");
-  } else {
-    selectionShare.classList.toggle("none");
-    selectionShareButton.classList.toggle("arrowPointer");
-  }
+  selectionShare.classList.toggle("none");
+  selectionShareButton.classList.toggle("arrowPointer");
 }
+//if (validationDesign === false || validationFill === false) {
+//messageShare.classList.toggle("none");
+//} else {
+//selectionShare.classList.toggle("none");
+//selectionShareButton.classList.toggle("arrowPointer");
+//}
+//}
 selectionShareButton.addEventListener("click", collapseValidationShare);
 
 //Validation
