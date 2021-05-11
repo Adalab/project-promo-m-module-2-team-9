@@ -13,3 +13,10 @@ let messageFill = document.querySelector(".js-tooltipFill");
 let selectionShare = document.querySelector(".js-share");
 let selectionShareButton = document.querySelector(".js-shareButton");
 //let messageShare = document.querySelector(".js-tooltipShare");
+
+
+//CARD PROFILE//
+
+const form = document.querySelector (".js-form");
+const previewNameElemento = document.querySelector (".js-nameProfile");
+const previewRoleElemento = document.querySelector (".js-rolProfile");
