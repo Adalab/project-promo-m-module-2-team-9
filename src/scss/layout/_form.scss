@@ -185,3 +185,35 @@
   color: black;
   line-height: 1.5em;
 }
+.fas {
+  cursor: pointer;
+}
+//JAVASCRIPT
+.fas_js {
+  transform: rotate(180deg);
+}
+.fill_js {
+  visibility: hidden;
+}
+.fill__contact-image {
+  display: none;
+}
+.js__profile-preview {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  position: absolute;
+  margin-left: 11rem;
+  margin-top: 27px;
+}
+.js__profile-trigger {
+  width: 140px;
+  height: 30px;
+  font-family: $fontopensans;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 var($dark-green-blue);
+  background-color: #e17334;
+  border: solid 1px white;
+}
