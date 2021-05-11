@@ -17,4 +17,4 @@ function handelChangeform (ev)  {
 }
 
 
-    form.addEventListener('change', handelChangeform)
+    form.addEventListener('keyup', handelChangeform)
