@@ -6,10 +6,6 @@
     }
   }
 
-  @media (min-width: 768px) {
-    width: calc(40% - 20px);
-  }
-
   fieldset {
     border-bottom: thin solid #ccc;
   }
@@ -124,9 +120,14 @@
 }
 
 .fill {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 20px;
+  //   max-width: 400px;
+
+  //   margin: 457px 0 0;
+  //   padding: 27px 19px 30px 20px;
+  //   padding: 1rem;
+  //display: flex;
+  //flex-flow: column wrap;
+  // gap: 20px;
 
   &__wrapper {
     display: flex;
