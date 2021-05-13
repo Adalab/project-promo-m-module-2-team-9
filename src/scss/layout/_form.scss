@@ -2,7 +2,12 @@
   color: $gunmetal;
   @media (min-width: 768px) {
     & {
-      width: calc(40% - 20px);
+      width: 45%;
+    }
+  }
+  @media (min-width: 1024px) {
+    & {
+      width: 35%;
     }
   }
 
