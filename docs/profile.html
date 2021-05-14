@@ -19,110 +19,128 @@
 <body>
   <div class="page">
     <header class="page__header">
-      <img src="./assets/images/logo-adalab.png" alt="Adalab">
+      <img src="./assets/images/hi-me-logo.png" alt="Hi Me! logo" width="120px">
       <h1></h1>
     </header>
 
-
     <div class="profile__wrapper">
       <section class="container-profile">
+        <div>
+          <button class="container-profile__resetbutton">
+            <i class="far fa-trash-alt"></i>
+            <h3 class="container-profile__resetbutton__text">reset</h3>
+          </button>
 
+          <div class="container-profile__containercard">
+            <div class="profile__name">
+              <h2 class="container-profile__containercard__name js-nameProfile">
+                Nombre Apellido
+              </h2>
+              <h3 class="container-profile__containercard__profesion js-rolProfile">
+                Front-end developer
+              </h3>
+            </div>
 
-        <button class="container-profile__resetbutton">
-          <i class="far fa-trash-alt"></i>
-          <h3 class="container-profile__resetbutton__text">reset</h3>
-        </button>
+            <img
+              src="./assets/images/img-default.jpg"
+              alt="Picture profile"
+              class="container-profile__containercard__img"
+            />
 
-        <div class="container-profile__containercard">
-          <div class="profile__name">
-            <h2 class="container-profile__containercard__name">Nombre Apellido</h2>
-            <h3 class="container-profile__containercard__profesion">
-              Front-end developer
-            </h3>
-          </div>
-
-          <img src="../assets/images/foto-lucia.jpg" alt="Picture profile" class="container-profile__containercard__img" />
-
-          <div class="container-profile__containerrrss">
-            <a class="container-profile__containerrrss__rrss">
-              <i class="fas fa-mobile-alt"></i></a>
-            <a class="container-profile__containerrrss__rrss">
-              <i class="far fa-envelope"></i>
-            </a>
-            <a class="container-profile__containerrrss__rrss">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="container-profile__containerrrss__rrss">
-              <i class="fab fa-github-alt"></i>
-            </a>
+            <div class="container-profile__containerrrss">
+              <a href="" class="container-profile__containerrrss__rrss">
+                <i class="fas fa-mobile-alt"></i
+              ></a>
+              <a href="" class="container-profile__containerrrss__rrss">
+                <i class="far fa-envelope"></i>
+              </a>
+              <a href="" class="container-profile__containerrrss__rrss">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="" class="container-profile__containerrrss__rrss">
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <form action="" method="POST" class="form">
-          <fieldset class="design">
 
-              <div class="fieldset__title">
-                  <i class="far fa-object-ungroup"></i>
-                  <h2>Diseña</h2>
-                  <i class="fas fa-chevron-down fa-chevron-up"></i>
+      <form action="" method="POST" class="form js-form">
+        <fieldset class="design">
+          <div class="fieldset__button">
+            <div class="fieldset__button--title">
+              <i class="far fa-object-ungroup"></i>
+              <h2>Diseña</h2>
+            </div>
+            <i class="fas fa-chevron-down fa-chevron-up js-designButton"></i>
+          </div>
+          <div class="js-design">
+            <div class="design__expand">
+              <h3>Colores</h3>
+
+              <div class="colors__wrapper">
+                <label class="label" for="palette1">
+                  <input type="radio" name="colors" id="palette1" />
+                  <ul class="palette__wrapper">
+                    <li class="color palette1__color1"></li>
+                    <li class="color palette1__color2"></li>
+                    <li class="color palette1__color3"></li>
+                  </ul>
+                </label>
+
+                <label class="label" for="palette2">
+                  <input type="radio" name="colors" id="palette2" />
+                  <ul class="palette__wrapper">
+                    <li class="color palette2__color1"></li>
+                    <li class="color palette2__color2"></li>
+                    <li class="color palette2__color3"></li>
+                  </ul>
+                </label>
+
+                <label class="label" for="palette3">
+                  <input type="radio" name="colors" id="palette3" />
+                  <ul class="palette__wrapper">
+                    <li class="color palette3__color1"></li>
+                    <li class="color palette3__color2"></li>
+                    <li class="color palette3__color3"></li>
+                  </ul>
+                </label>
               </div>
+            </div>
+          </div>
+        </fieldset>
 
-
-              <div class="design__expand">
-                  <h3>Colores</h3>
-
-                  <div class="colors__wrapper">
-
-                      <label class="label" for="palette1">
-                          <input type="radio" name="colors" id="palette1">
-                          <ul class="palette__wrapper">
-                              <li class="color palette1__color1"></li>
-                              <li class="color palette1__color2"></li>
-                              <li class="color palette1__color3"></li>
-                          </ul>
-                      </label>
-
-                      <label class="label" for="palette2">
-                          <input type="radio" name="colors" id="palette2">
-                          <ul class="palette__wrapper">
-                              <li class="color palette2__color1"></li>
-                              <li class="color palette2__color2"></li>
-                              <li class="color palette2__color3"></li>
-                          </ul>
-                      </label>
-
-                      <label class="label" for="palette3">
-                          <input type="radio" name="colors" id="palette3">
-                          <ul class="palette__wrapper">
-                              <li class="color palette3__color1"></li>
-                              <li class="color palette3__color2"></li>
-                              <li class="color palette3__color3"></li>
-                          </ul>
-                      </label>
-                  </div>
-
-              </div>
-
-
-          </fieldset>
-          <fieldset class="fill">
-
-            <div class="fieldset__title">
+        <fieldset class="fill">
+          <div class="fieldset__button">
+            <div class="fieldset__button--title">
               <i class="far fa-keyboard"></i>
               <h2>Rellena</h2>
-              <i class="fas fa-chevron-up"></i>
             </div>
+            <i class="fas fa-chevron-up arrowPointer js-fillButton"></i>
+          </div>
 
-
+          <div class="none js-fill fill__wrapper">
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-name">
                 Nombre completo
               </label>
-              <input class="fill__contact-name" type="text" id="fullname" name="fullname" placeholder="Ej: Sally Jill" />
+              <input
+                class="fill__contact-name"
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Ej: Sally Jill"
+              />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-role"> Puesto </label>
-              <input class="fill__contact-role" type="text" id="role" name="role" placeholder="Ej: Front- end unicorn" />
+              <input
+                class="fill__contact-role"
+                type="text"
+                id="role"
+                name="role"
+                placeholder="Ej: Front- end unicorn"
+              />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-image">
@@ -134,57 +152,86 @@
 
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-email"> Email </label>
-              <input class="fill__contact-email" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
+              <input
+                class="fill__contact-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ej: sally-hill@gmail.com"
+              />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-phone"> Teléfono </label>
-              <input class="fill__contact-phone" type="phone" id="phone" name="phone" placeholder="Ej: 555-55-55-55" />
+              <input
+                class="fill__contact-phone"
+                type="phone"
+                id="phone"
+                name="phone"
+                placeholder="Ej: 555-55-55-55"
+              />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-linkedin"> Linkedin </label>
-              <input class="fill__contact-linkedin" type="url" id="linkedin" name="linkedin"
-                placeholder="Ej: linkedin.com/salli.hill" />
+              <input
+                class="fill__contact-linkedin"
+                type="url"
+                id="linkedin"
+                name="linkedin"
+                placeholder="Ej: linkedin.com/salli.hill"
+              />
             </div>
             <div class="fill__contact">
               <label class="fill__text" for="fill__contact-github"> Github </label>
-              <input class="fill__contact-github" type="url" id="github" name="github" placeholder="Ej: @sally-hill" />
+              <input
+                class="fill__contact-github"
+                type="url"
+                id="github"
+                name="github"
+                placeholder="Ej: @sally-hill"
+              />
             </div>
+          </div>
+        </fieldset>
 
-          </fieldset>
-          <fieldset class="share">
+        <fieldset class="share">
+          <div class="fieldset__button">
+            <div class="fieldset__button--title">
+              <i class="fas fa-share-alt"></i>
+              <h2>Comparte</h2>
+            </div>
+            <i
+              class="fas fa-chevron-down fa-chevron-up arrowPointer js-shareButton"
+            ></i>
+          </div>
 
-              <div class="fieldset__title">
-                  <i class="fas fa-share-alt"></i>
-                  <h2>Comparte</h2>
-                  <i class="fas fa-chevron-down fa-chevron-up"></i>
+          <div class="none js-share">
+            <div class="share__expand">
+              <button class="share__button" type="submit">
+                <i class="far fa-address-card">&nbsp;&nbsp;</i>Crear tarjeta
+              </button>
+
+              <div class="card--created">
+                <h3>La tarjeta ha sido creada:</h3>
+                <small><a href="">enlace</a></small>
+                <button class="share__button--twitter">Compartir en Twitter</button>
               </div>
+            </div>
+          </div>
+        </fieldset>
 
-              <div class="share__expand">
-                  <button class="share__button" type="submit"><i class="far fa-address-card">&nbsp;&nbsp;</i>Crear
-                      tarjeta</button>
-
-                  <div>
-                      <h3>La tarjeta ha sido creada:</h3>
-                      <a href="">enlace</a>
-                      <button class="share__button--twitter">Compartir en Twitter</button>
-                  </div>
-              </div>
-          </fieldset>
       </form>
+      <div class="tooltip js-tooltipFill js-tooltipShare none">
+        <p class="tooltipParagraph">Don't hurry. First, fill the previous sections</p>
+      </div>
+
     </div>
 
     <footer class="footer">
-      <div class="footer__container">
-        <small class="footer__copy"> Nombre grupo &copy; 2021</small>
-        <a href="https://adalab.es/" title="Adalab" class="footer__logo">
-          <img
-            src="./assets/images/logo-adalab.png"
-            alt="logo-Adalab"
-            class="footer__logoImg"
-        /></a>
-      </div>
-    </footer>
+      <small class="footer__copy"> Nombre grupo &copy; 2021</small>
+      <a href="https://adalab.es/" title="Adalab" class="footer__logo">
+        <img src="./assets/images/logo-adalab.png" alt="logo-Adalab" class="footer__logoImg" /></a>
 
+    </footer>
   </div>
   <script src="./assets/js/main.js"></script>
 </body>
