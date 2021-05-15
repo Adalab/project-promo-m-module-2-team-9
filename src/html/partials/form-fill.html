@@ -29,15 +29,22 @@
         name="role"
         placeholder="Ej: Front- end unicorn"
       />
+      <input class="fill__contact-image" type="file" id="image" name="image" />
     </div>
-    <div class="fill__contact">
+    <div class="fill__contact" class="js__profile-upload-btn">
       <label class="fill__text" for="fill__contact-image">
         Imagen del perfil
       </label>
-
-      <input class="fill__contact-image" type="file" id="image" name="image" />
+      <div class="js__profile-preview"></div>
+      <input
+        class="fill__contact-image"
+        class="js__profile-image"
+        type="file"
+        id="image"
+        name="image"
+      />
+      <button class="js__profile-trigger">Añadir imagen</button>
     </div>
-
     <div class="fill__contact">
       <label class="fill__text" for="fill__contact-email"> Email </label>
       <input
