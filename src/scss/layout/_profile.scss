@@ -58,6 +58,9 @@
       color: $gunmetal;
     }
     &__img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       width: 240px;
       height: 200px;
       margin-top: 10px;

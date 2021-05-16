@@ -199,13 +199,9 @@
 .fas_js {
   transform: rotate(180deg);
 }
-.fill_js {
-  visibility: hidden;
-}
-.fill__contact-image {
-  display: none;
-}
+
 .js__profile-preview {
+  background-size: cover;
   width: 30px;
   height: 30px;
   border: solid 1px $hospital-green;
@@ -213,6 +209,14 @@
   margin-left: 11rem;
   margin-top: 27px;
 }
+
+.js__profile-upload-btn {
+  position: absolute;
+  transform: translateY(23px);
+  opacity: 0;
+  z-index: 9;
+}
+
 .js__profile-trigger {
   width: 140px;
   height: 30px;
