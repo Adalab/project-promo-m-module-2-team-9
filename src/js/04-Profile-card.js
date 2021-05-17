@@ -20,3 +20,15 @@ function handelChangeform(ev) {
   }
 }
 form.addEventListener("keyup", handelChangeform);
+
+const data = {
+  name: " ",
+  fullname: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  palette: "",
+};
+
+data.name = previewNameElemento;
+console.log(data.name);
