@@ -41,7 +41,7 @@
   }
 
   .design__expand {
-    padding: 1rem 0;
+    padding-top: 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -111,6 +111,7 @@
         border-radius: 3px;
         color: white;
         padding: 0.3rem 1.5rem;
+        margin-bottom: 30px;
       }
     }
 
@@ -161,6 +162,10 @@
     &-github {
       padding: 0.4rem;
       border: solid 1px $hospital-green;
+    }
+
+    &-github {
+      margin-bottom: 30px;
     }
   }
   ::placeholder {
