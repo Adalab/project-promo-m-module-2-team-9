@@ -13,10 +13,10 @@ function handelChangeform(ev) {
     previewRoleElemento.innerHTML = changedValue;
   }
   if (inputChanged.name === "email") {
-    previewemailElemento.href = changedValue;
+    previewemailElemento.href += changedValue;
   }
   if (inputChanged.name === "phone") {
-    previewphoneElemento.href = changedValue;
+    previewphoneElemento.href += changedValue;
   }
 }
 form.addEventListener("keyup", handelChangeform);
