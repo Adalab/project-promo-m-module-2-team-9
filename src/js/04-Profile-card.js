@@ -34,4 +34,27 @@ function handleChangeForm(ev) {
         previewLinkedinElemento.href = changedValue;
     } */
 
-form.addEventListener("keyup", handleChangeForm);
+function handlerChangecolor(ev) {
+  const checked = ev.target.value;
+
+  if (checked === "1") {
+    previewNameElemento.style.color = "#114e4e";
+    circleSocialnetwork.style.border = "#a2deaf solid 2px";
+  }
+  if (checked === "2") {
+    previewNameElemento.style.color = "#420101";
+    circleSocialnetwork.style.border = "#E95626 solid 2px";
+  }
+  if (checked === "3") {
+    previewNameElemento.style.color = "yellow";
+  }
+}
+
+generalColors.addEventListener("click", handlerChangecolor);
+
+// let safeoption = localStorage.getItem("localstorage");
+// if (safeoption === "1") {
+//   body.classList.add("claro");
+// } else {
+//   body.classList.add("oscuro");
+// }

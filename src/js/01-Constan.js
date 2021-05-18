@@ -22,3 +22,11 @@ const previewPhoneElement = document.querySelector(".js-phone");
 const previewMailElement = document.querySelector(".js-mail");
 const previewLinkedinElement = document.querySelector(".js-linkedin");
 const previewGithubElement = document.querySelector(".js-github");
+const generalColors = document.querySelector(".js_generalcolor");
+
+// PALETTE
+
+const circleSocialnetwork = document.querySelector(
+  ".container-profile__containerrrss__rrss"
+);
+console.log(circleSocialnetwork);

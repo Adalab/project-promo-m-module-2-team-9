@@ -1,5 +1,6 @@
 //'use strict';
 const data = {
+  pallete: "",
   name: "",
   job: "",
   phone: "",
