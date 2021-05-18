@@ -39,14 +39,24 @@ function handlerChangecolor(ev) {
 
   if (checked === "1") {
     previewNameElemento.style.color = "#114e4e";
-    circleSocialnetwork.style.border = "#a2deaf solid 2px";
+
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#a2deaf solid 2px";
+    }
   }
+
   if (checked === "2") {
     previewNameElemento.style.color = "#420101";
-    circleSocialnetwork.style.border = "#E95626 solid 2px";
+
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#E95626 solid 2px";
+    }
   }
   if (checked === "3") {
-    previewNameElemento.style.color = "yellow";
+    previewNameElemento.style.color = "#EAB052";
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#d5d5d5 solid 2px";
+    }
   }
 }
 

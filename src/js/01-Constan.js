@@ -26,7 +26,7 @@ const generalColors = document.querySelector(".js_generalcolor");
 
 // PALETTE
 
-const circleSocialnetwork = document.querySelector(
+const circleSocialnetwork = document.querySelectorAll(
   ".container-profile__containerrrss__rrss"
 );
 console.log(circleSocialnetwork);
