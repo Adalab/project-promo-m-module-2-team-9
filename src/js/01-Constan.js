@@ -29,4 +29,5 @@ const generalColors = document.querySelector(".js_generalcolor");
 const circleSocialnetwork = document.querySelectorAll(
   ".container-profile__containerrrss__rrss"
 );
-console.log(circleSocialnetwork);
+
+const profileName = document.querySelector(".profile__name");

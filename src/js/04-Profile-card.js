@@ -39,6 +39,7 @@ function handlerChangecolor(ev) {
 
   if (checked === "1") {
     previewNameElemento.style.color = "#114e4e";
+    profileName.style.borderLeft = "#438792 solid 5px";
 
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#a2deaf solid 2px";
@@ -47,6 +48,7 @@ function handlerChangecolor(ev) {
 
   if (checked === "2") {
     previewNameElemento.style.color = "#420101";
+    profileName.style.borderLeft = "#bd1010 solid 5px";
 
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#E95626 solid 2px";
@@ -54,6 +56,7 @@ function handlerChangecolor(ev) {
   }
   if (checked === "3") {
     previewNameElemento.style.color = "#EAB052";
+    profileName.style.borderLeft = "#bfcdd0 solid 5px";
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#d5d5d5 solid 2px";
     }
