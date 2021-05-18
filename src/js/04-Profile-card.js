@@ -11,8 +11,8 @@ function refreshData() {
     data.name === "" ? "Nombre apellidos" : data.name;
   previewRoleElemento.innerHTML =
     data.job === "" ? "Front-end developer" : data.job;
-  previewPhoneElement.href += data.phone;
-  previewMailElement.href += data.email;
+  previewPhoneElement.href = `https://api.whatsapp.com/send?phone=${data.phone}`;
+  previewMailElement.href = `mailto:${data.email}`;
   previewLinkedinElement.href = data.linkedin;
   previewGithubElement.href = data.github;
 }
