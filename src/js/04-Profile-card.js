@@ -8,7 +8,7 @@ function changedForm(ev) {
 
 function refreshData() {
   previewNameElemento.innerHTML =
-    data.name === "" ? "Nombre apellidos" : data.name;
+    data.name === "" ? "Nombre Apellido" : data.name;
   previewRoleElemento.innerHTML =
     data.job === "" ? "Front-end developer" : data.job;
   previewPhoneElement.href = `https://api.whatsapp.com/send?phone=${data.phone}`;
@@ -19,6 +19,8 @@ function refreshData() {
 
 function handleChangeForm(ev) {
   // 1. Cojo el nuevo valor y lo guardo en una variable
+
+  handlerChangecolor(ev);
 
   changedForm(ev);
 
@@ -63,7 +65,8 @@ function handlerChangecolor(ev) {
   }
 }
 
-generalColors.addEventListener("click", handlerChangecolor);
+//generalColors.addEventListener("click", handlerChangecolor);
+form.addEventListener("change", handleChangeForm);
 
 // let safeoption = localStorage.getItem("localstorage");
 // if (safeoption === "1") {
