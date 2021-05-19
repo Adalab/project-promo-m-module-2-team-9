@@ -18,7 +18,6 @@ function handleClickCreate(ev) {
         responseElement.classList.remove("none");
         responseElement.innerHTML = "Tienes que rellenar los campos";
       } else {
-        responseElement.classList.add("none");
         responseElement.innerHTML = `<a href='${data.cardURL}'>Dirección url</a>`;
         //   responseElement.classList.remove("none");
         cardCreated.classList.remove("none");
