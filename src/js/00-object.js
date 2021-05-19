@@ -1,10 +1,11 @@
 //'use strict';
 const data = {
-  palette: "",
+  palette: 1,
   name: "",
   job: "",
   phone: "",
   email: "",
   linkedin: "",
   github: "",
+  photo: "",
 };
