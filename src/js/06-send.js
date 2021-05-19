@@ -2,6 +2,7 @@
 
 const createButton = document.querySelector(".js-create-card");
 const responseElement = document.querySelector(".js-response");
+const cardCreated = document.querySelector(".card--created");
 
 function handleClickCreate(ev) {
   ev.preventDefault();
@@ -14,16 +15,18 @@ function handleClickCreate(ev) {
     .then((response) => response.json())
     .then((data) => {
       if (data.success === false) {
-        responseElement.innerHTML = "Tienes que rellenar los campos";
         responseElement.classList.remove("none");
+        responseElement.innerHTML = "Tienes que rellenar los campos";
       } else {
+        responseElement.classList.add("none");
         responseElement.innerHTML = `<a href='${data.cardURL}'>Dirección url</a>`;
-        responseElement.remove("none");
+        //   responseElement.classList.remove("none");
+        cardCreated.classList.remove("none");
       }
     })
     .catch(() => {
       responseElement.innerHTML = "Inténtalo más tarde.";
-      responseElement.remove("none");
+      //   responseElement.classList.remove("none");
     });
 }
 

@@ -101,7 +101,7 @@
       border-radius: 0.5rem;
       color: white;
       font-size: 18px;
-      margin: 3rem 0;
+      margin: 2rem 0;
       padding: 0.6rem 2rem;
       text-transform: uppercase;
 
@@ -111,16 +111,25 @@
         border-radius: 3px;
         color: white;
         padding: 0.3rem 1.5rem;
-        margin-bottom: 30px;
+        margin: 2rem;
       }
     }
 
-    &__expand,
+    &__expand {
+      text-align: center;
+      margin: 0 auto;
+    }
+
     .card--created {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      gap: 0.5rem;
+      border-top: thin solid #ccc;
+      text-align: center;
+      width: 250px;
+      margin: 0 auto;
+      padding: 1rem 0;
+
+      h3 {
+        margin: 1rem;
+      }
     }
   }
 }
@@ -178,6 +187,11 @@
 .none {
   display: none;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 .arrowPointer {
   transform: rotate(180deg);
 }
