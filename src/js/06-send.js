@@ -9,7 +9,9 @@ function handleClickCreate(ev) {
 
   fetch("https://awesome-profile-cards.herokuapp.com/card", {
     method: "POST",
-    mode: "cors", //esto es para que el servidor tenga en cuenta que pueden llegar peticiones de otros sitios
+    headers: {
+      "content-type": "application/json",
+    },
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
