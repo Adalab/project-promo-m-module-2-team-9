@@ -30,3 +30,4 @@ function handleClickCreate(ev) {
 }
 
 createButton.addEventListener("click", handleClickCreate);
+console.log(cardCreated);

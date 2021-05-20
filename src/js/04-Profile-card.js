@@ -44,6 +44,7 @@ function handlerChangecolor(ev) {
 
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#a2deaf solid 2px";
+      circleSocialnetwork[i].style.color = "#114e4e";
     }
   }
 
@@ -53,6 +54,7 @@ function handlerChangecolor(ev) {
 
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#E95626 solid 2px";
+      circleSocialnetwork[i].style.color = "#bd1010";
     }
   }
   if (checked === "3") {
@@ -60,6 +62,7 @@ function handlerChangecolor(ev) {
     profileName.style.borderLeft = "#bfcdd0 solid 5px";
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#d5d5d5 solid 2px";
+      circleSocialnetwork[i].style.color = "#eab052";
     }
   }
 }
