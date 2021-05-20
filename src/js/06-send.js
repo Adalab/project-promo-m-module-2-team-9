@@ -1,10 +1,3 @@
-//Lo que ha hecho Iván en clase
-
-const createButton = document.querySelector(".js-create-card");
-const responseElement = document.querySelector(".js-response");
-const cardCreated = document.querySelector(".card--created");
-const responseUrl = document.querySelector(".js-url");
-
 function handleClickCreate(ev) {
   ev.preventDefault();
 

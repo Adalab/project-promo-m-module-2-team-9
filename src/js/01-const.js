@@ -30,4 +30,9 @@ const circleSocialnetwork = document.querySelectorAll(
   ".container-profile__containerrrss__rrss"
 );
 
+// SHARE
 const profileName = document.querySelector(".profile__name");
+const createButton = document.querySelector(".js-create-card");
+const responseElement = document.querySelector(".js-response");
+const cardCreated = document.querySelector(".card--created");
+const responseUrl = document.querySelector(".js-url");
