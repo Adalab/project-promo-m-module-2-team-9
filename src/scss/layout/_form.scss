@@ -188,30 +188,55 @@
   display: none;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .arrowPointer {
   transform: rotate(180deg);
 }
 .tooltip {
   position: absolute;
+  left: 50px;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
   padding: 5px;
   max-width: 200px;
 }
 .tooltipParagraph {
   text-align: center;
-  color: black;
+  color: white;
   line-height: 1.5em;
 }
+.validationMessage {
+  max-width: 300px;
+  line-height: 1.5em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .tooltip {
+    left: 90px;
+    max-width: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .tooltip {
+    left: 90px;
+    max-width: 300px;
+  }
+}
+
 .fas {
   cursor: pointer;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 //JAVASCRIPT
 .fas_js {
   transform: rotate(180deg);
