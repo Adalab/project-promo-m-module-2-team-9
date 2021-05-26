@@ -54,15 +54,15 @@ function handlerChangecolor(ev) {
 
     for (let i = 0; i < circleSocialnetwork.length; i++) {
       circleSocialnetwork[i].style.border = "#E95626 solid 2px";
-      circleSocialnetwork[i].style.color = "#bd1010";
+      circleSocialnetwork[i].style.color = "#420101";
     }
   }
   if (checked === "3") {
-    previewNameElemento.style.color = "#EAB052";
-    profileName.style.borderLeft = "#bfcdd0 solid 5px";
+    previewNameElemento.style.color = "#3e5b65";
+    profileName.style.borderLeft = "#eab052 solid 5px";
     for (let i = 0; i < circleSocialnetwork.length; i++) {
-      circleSocialnetwork[i].style.border = "#d5d5d5 solid 2px";
-      circleSocialnetwork[i].style.color = "#eab052";
+      circleSocialnetwork[i].style.border = "#a0c0cf solid 2px";
+      circleSocialnetwork[i].style.color = "#3e5b65";
     }
   }
 }
