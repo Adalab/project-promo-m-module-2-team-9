@@ -11,16 +11,16 @@ function validateDesignSection() {
 validateDesignSection();
 
 //ValidationFill
-// let validationFill = false;
-// function validateFillSection() {
-//   // if(validateName && validateRole && validateEmail && ValidatePhoto) {
-//   //   validationFill = true;
-//   // } else {
-//   //   !validationFill;
-//   // }
-//   //  }
-// }
-// validateFillSection();
+let validationFill = false;
+function validateFillSection() {
+  if(validateName && validateRole && ValidatePhoto && validateEmail && validatePhone && validateLinkedin && validateGithub) {
+    validationFill = true;
+  } else {
+    !validationFill;
+  }
+   }
+}
+validateFillSection();
 
 //ValidationName
 let inputName = document.querySelector(".fill__contact-name");
@@ -52,6 +52,41 @@ function validationJob() {
 }
 inputJob.addEventListener("blur", validationJob);
 
+//ValidationImage
+let inputPhoto = document.querySelector(".fill__contact-image");
+let fileTypes = [
+  "image / jpg",
+  "image / png",
+  "image / jpeg",
+  "image / gif",
+  "image / svg",
+];
+let validationFileType = (file) => fileTypes.includes(file.type);
+let validatePhoto = false;
+function validationPhoto(event) {
+  let pNotFound = document.querySelector(".js-validationPhoto");
+  let pNotValid = document.querySelector(".js-validationPhotoTwo");
+  let pTooBig = document.querySelector(".js-validationPhotoThree");
+  let file = inputPhoto.files.item(0);
+  if (inputPhoto.files.length === 0) {
+    pNotFound.classList.remove("none");
+  } else {
+    if (!validationFileType(file)) {
+      pNotValid.classList.remove("none");
+    } else {
+      if (file.size >= 4096) {
+        pTooBig.classList.remove("none");
+      } else {
+        validatePhoto = true;
+        pNotFound.classList.add("none");
+        pNotValid.classList.add("none");
+        pTooBig.classList.add("none");
+      }
+    }
+  }
+}
+inputPhoto.addEventListener("change", validationPhoto);
+
 //ValidationEmail
 let inputEmail = document.querySelector(".fill__contact-email");
 let validateEmail = false;
@@ -70,36 +105,48 @@ function validationEmail() {
 }
 inputEmail.addEventListener("blur", validationEmail);
 
-//ValidationImage
-let inputPhoto = document.querySelector(".fill__contact-image");
-let fileTypes = [
-  "image / jpg",
-  // "image / png",
-  "image / jpeg",
-  "image / gif",
-  "image / svg",
-];
-let validationFileType = (file) => fileTypes.includes(file.type);
-let validatePhoto = false;
-function validationPhoto(event) {
-  let paragraphPhoto = document.querySelector(".js-validationPhoto");
-  let paragraphPhotoTwo = document.querySelector(".js-validationPhotoTwo");
-  let paragraphPhotoThree = document.querySelector(".js-validationPhotoThree");
-  if (inputPhoto.files.length === 0) {
-    paragraphPhoto.classList.remove("none");
+//ValidationPhone
+let inputPhone = document.querySelector(".fill__contact-phone");
+let validatePhone = false;
+function validationPhone() {
+  let valuePhone = data.phone;
+  let validatePhone = valuePhone.match(/^[0-9]+$/);
+  let paragraphPhone = document.querySelector(".js-validationPhone");
+  if (valuePhone === "" || !validatePhone) {
+    paragraphPhone.classList.remove("none");
   } else {
-    if (!validationFileType) {
-      paragraphPhotoTwo.classList.remove("none");
-    } else {
-      if (inputPhoto.files.item(0).size >= 4096) {
-        paragraphPhotoThree.classList.remove("none");
-      } else {
-        validatePhoto = true;
-        paragraphPhoto.classList.add("none");
-        paragraphPhotoTwo.classList.add("none");
-        paragraphPhotoThree.classList.add("none");
-      }
-    }
+    validatePhone = true;
+    paragraphPhone.classList.add("none");
   }
 }
-inputPhoto.addEventListener("change", validationPhoto);
+inputPhone.addEventListener("blur", validationPhone);
+
+//ValidationLinkedin
+let inputLinkedin = document.querySelector(".fill__contact-linkedin");
+let validateLinkedin = false;
+function validationLinkedin() {
+  let valueLinkedin = data.linkedin;
+  let paragraphLinkedin = document.querySelector(".js-validationLinkedin ");
+  if (valueLinkedin === "") {
+    paragraphLinkedin.classList.remove("none");
+  } else {
+    validateLinkedin = true;
+    paragraphLinkedin.classList.add("none");
+  }
+}
+inputLinkedin.addEventListener("blur", validationLinkedin);
+
+//ValidationGitHub
+let inputGithub = document.querySelector(".fill__contact-github");
+let validateGithub = false;
+function validationGithub() {
+  let valueGithub = data.github;
+  let paragraphGithub = document.querySelector(".js-validationGithub ");
+  if (valueGithub === "") {
+    paragraphGithub.classList.remove("none");
+  } else {
+    validateGithub = true;
+    paragraphGithub.classList.add("none");
+  }
+}
+inputGithub.addEventListener("blur", validationGithub);
