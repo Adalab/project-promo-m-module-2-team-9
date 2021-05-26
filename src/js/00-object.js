@@ -1,5 +1,5 @@
 //'use strict';
-const data = {
+let data = {
   palette: "1",
   name: "",
   job: "",
