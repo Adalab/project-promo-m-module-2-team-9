@@ -1,4 +1,5 @@
-//'use strict';
+"use strict";
+
 let data = {
   palette: "1",
   name: "",

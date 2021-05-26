@@ -24,7 +24,7 @@ function handleClickCreate(ev) {
       //   responseElement.classList.remove("none");
     });
 
-  recordData();
+  localStorage.setItem("profile", JSON.stringify(data));
 }
 
 createButton.addEventListener("click", handleClickCreate);
