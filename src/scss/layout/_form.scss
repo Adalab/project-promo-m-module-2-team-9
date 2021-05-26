@@ -172,9 +172,12 @@
       padding: 0.4rem;
       border: solid 1px $hospital-green;
     }
+    &-linkedin {
+      width: 100%;
+    }
 
     &-github {
-      margin-bottom: 30px;
+      width: 100%;
     }
   }
   ::placeholder {
@@ -182,16 +185,41 @@
     font-size: 14px;
     font-family: $fontopensans;
   }
+  &__contactPrefix {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+  }
+  &__contactPrefixGithub {
+    margin-bottom: 30px;
+  }
+  &__contactParagraph {
+    align-self: center;
+  }
+  @media (min-width: 768px) {
+    &__contactPrefix {
+      font-size: 14px;
+    }
+  }
 }
 
 .none {
   display: none;
 }
-
 .arrowPointer {
   transform: rotate(180deg);
 }
-.tooltip {
+.tooltipFill {
+  position: absolute;
+  left: 50px;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 200px;
+}
+.tooltipShare {
   position: absolute;
   left: 50px;
   z-index: 5;

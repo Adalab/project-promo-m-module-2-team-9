@@ -17,6 +17,7 @@ function handleClickCreate(ev) {
         responseUrl.innerHTML = `<a href='${data.cardURL}' target="_blank">Pincha aquí para ver tu tarjeta</a>`;
         //   responseElement.classList.remove("none");
         cardCreated.classList.remove("none");
+        createButton.classList.add("none");
       }
     })
     .catch(() => {

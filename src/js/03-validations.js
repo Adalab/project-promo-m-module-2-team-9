@@ -10,18 +10,6 @@ function validateDesignSection() {
 }
 validateDesignSection();
 
-//ValidationFill
-let validationFill = false;
-function validateFillSection() {
-  if(validateName && validateRole && ValidatePhoto && validateEmail && validatePhone && validateLinkedin && validateGithub) {
-    validationFill = true;
-  } else {
-    !validationFill;
-  }
-   }
-}
-validateFillSection();
-
 //ValidationName
 let inputName = document.querySelector(".fill__contact-name");
 let validateName = false;
@@ -55,11 +43,11 @@ inputJob.addEventListener("blur", validationJob);
 //ValidationImage
 let inputPhoto = document.querySelector(".fill__contact-image");
 let fileTypes = [
-  "image / jpg",
-  "image / png",
-  "image / jpeg",
-  "image / gif",
-  "image / svg",
+  "image/jpg",
+  "image/png",
+  "image/jpeg",
+  "image/gif",
+  "image/svg",
 ];
 let validationFileType = (file) => fileTypes.includes(file.type);
 let validatePhoto = false;
@@ -74,7 +62,7 @@ function validationPhoto(event) {
     if (!validationFileType(file)) {
       pNotValid.classList.remove("none");
     } else {
-      if (file.size >= 4096) {
+      if (file.size >= 400096) {
         pTooBig.classList.remove("none");
       } else {
         validatePhoto = true;
@@ -92,11 +80,11 @@ let inputEmail = document.querySelector(".fill__contact-email");
 let validateEmail = false;
 function validationEmail() {
   let valueEmail = data.email;
-  let validateEmail = valueEmail.match(
+  let regexEmail = valueEmail.match(
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
   );
   let paragraphEmail = document.querySelector(".js-validationEmail");
-  if (!validateEmail) {
+  if (!regexEmail) {
     paragraphEmail.classList.remove("none");
   } else {
     validateEmail = true;
@@ -110,9 +98,9 @@ let inputPhone = document.querySelector(".fill__contact-phone");
 let validatePhone = false;
 function validationPhone() {
   let valuePhone = data.phone;
-  let validatePhone = valuePhone.match(/^[0-9]+$/);
+  let regexPhone = valuePhone.match(/^[0-9]+$/);
   let paragraphPhone = document.querySelector(".js-validationPhone");
-  if (valuePhone === "" || !validatePhone) {
+  if (valuePhone === "" || !regexPhone) {
     paragraphPhone.classList.remove("none");
   } else {
     validatePhone = true;
@@ -150,3 +138,20 @@ function validationGithub() {
   }
 }
 inputGithub.addEventListener("blur", validationGithub);
+
+//ValidationFill
+let validationFill = false;
+function validateFillSection() {
+  if (
+    validateName &&
+    validateJob &&
+    validatePhoto &&
+    validateEmail &&
+    validatePhone &&
+    validateLinkedin &&
+    validateGithub
+  ) {
+    validationFill = true;
+  }
+}
+validateFillSection();

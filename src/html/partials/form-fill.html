@@ -88,14 +88,16 @@
 
     <div class="fill__contact">
       <label class="fill__text" for="linkedin"> Linkedin </label>
-      <input
-        class="fill__contact-linkedin"
-        type="url"
-        id="linkedin"
-        name="linkedin"
-        value="https://www.linkedin.com/in/"
-        placeholder="Ej: linkedin.com/salli.hill"
-      />
+      <div class="fill__contactPrefix">
+        <p class="fill__contactParagraph">https://www.linkedin.com/in/</p>
+        <input
+          class="fill__contact-linkedin"
+          type="url"
+          id="linkedin"
+          name="linkedin"
+          placeholder="Ej: salli.hill"
+        />
+      </div>
       <p class="js-validationLinkedin validationMessage none">
         El campo no se ha rellenado
       </p>
@@ -103,14 +105,16 @@
 
     <div class="fill__contact">
       <label class="fill__text" for="github"> Github </label>
-      <input
-        class="fill__contact-github"
-        type="url"
-        value="https://github.com/"
-        id="github"
-        name="github"
-        placeholder="Ej: @sally-hill"
-      />
+      <div class="fill__contactPrefix fill__contactPrefixGithub">
+        <p class="fill__contactParagraph">https://github.com/</p>
+        <input
+          class="fill__contact-github"
+          type="url"
+          id="github"
+          name="github"
+          placeholder="Ej: sally-hill"
+        />
+      </div>
       <p class="js-validationGithub validationMessage none">
         El campo no se ha rellenado
       </p>
