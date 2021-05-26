@@ -23,6 +23,8 @@ function handleClickCreate(ev) {
       responseElement.innerHTML = "Inténtalo más tarde.";
       //   responseElement.classList.remove("none");
     });
+
+  recordData();
 }
 
 createButton.addEventListener("click", handleClickCreate);
