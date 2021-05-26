@@ -1,8 +1,14 @@
 resetButton.addEventListener("click", test2);
 
-function test2() {
-  for (const iterator of data) {
-    data.iterator = "";
-    console.log(data);
-  }
+function reset() {
+  data = {
+    palette: "1",
+    name: "",
+    job: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+    github: "",
+    photo: "",
+  };
 }
