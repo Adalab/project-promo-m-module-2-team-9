@@ -3,16 +3,16 @@ resetButton.addEventListener("click", reset);
 function reset() {
   data = {
     palette: "1",
-    name: "Nombre Apellido",
-    job: "Front-end developer",
+    name: "",
+    job: "",
     phone: "",
     email: "",
-    linkedin: "https://www.linkedin.com/in/",
-    github: "https://github.com/",
+    linkedin: "",
+    github: "",
     photo: "",
   };
   resetChangeColor();
-  deleteValueFOrm();
+  resetForm();
   refreshData();
 }
 function resetChangeColor(ev) {
@@ -27,17 +27,8 @@ function resetChangeColor(ev) {
   }
 }
 
-function deleteValueFOrm() {
-  const completedname = document.querySelector(".fill__contact-name");
-  const role = document.querySelector(".fill__contact-role");
-  const phone = document.querySelectorAll(".fill__contact");
-  const mail = document.querySelector(".fill__contact-email");
-  const linkedin = document.querySelector(".fill__contact-linkedin");
-  const github = document.querySelector(".fill__contact-github");
-  completedname.value = "";
-  role.value = "";
-  mail.value = "";
-  phone.value = "";
-  linkedin.value = "https://www.linkedin.com/in/";
-  github.value = "https://github.com/";
+function resetForm() {
+  form.reset();
+  profileImage.style.backgroundImage = "url('./assets/images/img-default.jpg')";
+  profilePreview.style.backgroundImage = "";
 }
