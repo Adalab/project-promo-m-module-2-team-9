@@ -14,6 +14,7 @@ function reset() {
   resetChangeColor();
   resetForm();
   refreshData();
+  localStorage.clear();
 }
 function resetChangeColor(ev) {
   const checked = document.querySelectorAll(".palette__wrapper");

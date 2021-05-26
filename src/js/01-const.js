@@ -40,4 +40,13 @@ const responseUrl = document.querySelector(".js-url");
 //Button
 const resetButton = document.querySelector(".js-reset");
 
-//Form
+// //Form
+const namelocal = document.querySelector(".fill__contact-name");
+const jobLocal = document.querySelector(".fill__contact-role");
+const emailLocal = document.querySelector(".fill__contact-email");
+
+const phoneLocal = document.querySelector(".fill__contact-phone");
+
+const linkedinLocal = document.querySelector(".fill__contact-linkedin");
+
+const githubLocal = document.querySelector(".fill__contact-github");

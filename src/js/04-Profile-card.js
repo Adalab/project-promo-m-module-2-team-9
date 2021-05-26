@@ -1,9 +1,7 @@
 function changedForm(ev) {
   const inputNameChange = ev.target.name;
   const changedValue = ev.target.value;
-
   data[inputNameChange] = changedValue;
-  console.log(data);
 }
 
 function refreshData() {
@@ -65,6 +63,7 @@ function handlerChangecolor(ev) {
       circleSocialnetwork[i].style.color = "#3e5b65";
     }
   }
+  localStorage.setItem("profile", JSON.stringify(data));
 }
 
 //generalColors.addEventListener("click", handlerChangecolor);
