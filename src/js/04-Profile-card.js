@@ -1,13 +1,12 @@
 function changedForm(ev) {
   const inputNameChange = ev.target.name;
   const changedValue = ev.target.value;
-  if (inputNameChange === "linkedin") {
-    data[inputNameChange] = "https://www.linkedin.com/in/" + changedValue;
-  } else if (inputNameChange === "github") {
-    data[inputNameChange] = "https://github.com/" + changedValue;
-  } else {
-    data[inputNameChange] = changedValue;
-  }
+  // if (inputNameChange === "linkedin") {
+  //   data[inputNameChange] = "https://www.linkedin.com/in/" + changedValue;
+  // } else if (inputNameChange === "github") {
+  //   data[inputNameChange] = changedValue;
+  // } else {
+  data[inputNameChange] = changedValue;
   console.log(data);
 }
 
@@ -70,7 +69,6 @@ function handlerChangecolor(ev) {
       circleSocialnetwork[i].style.color = "#3e5b65";
     }
   }
-  localStorage.setItem("profile", JSON.stringify(data));
 }
 
 //generalColors.addEventListener("click", handlerChangecolor);
