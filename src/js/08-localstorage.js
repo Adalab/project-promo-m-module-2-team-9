@@ -2,7 +2,19 @@ let dataSave = [];
 dataSave = JSON.parse(localStorage.getItem("profile"));
 function printAfterReload() {
   if (dataSave !== null) {
+    data = dataSave;
+
     refreshData2();
+    console.log(dataSave);
+    console.log(data);
+    validationNameLocalStorage();
+    validationJobLocalStorage();
+    validationPhotoLocalStorage();
+    validationEmailLocalStorage();
+    validationPhoneLocalStorage();
+    validationLinkedinLocalStorage();
+    validationGithubLocalStorage();
+    validateFillSection();
   }
 }
 

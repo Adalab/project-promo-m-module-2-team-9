@@ -40,5 +40,5 @@ function collapseValidationShare(e) {
 }
 selectionShareButton.addEventListener("click", function (e) {
   validateFillSection();
-  collapseValidationShare();
+  collapseValidationShare(e);
 });

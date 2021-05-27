@@ -7,6 +7,7 @@ function changedForm(ev) {
   //   data[inputNameChange] = changedValue;
   // } else {
   data[inputNameChange] = changedValue;
+  console.log(data);
 }
 
 function refreshData() {

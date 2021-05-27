@@ -13,6 +13,11 @@ validateDesignSection();
 //ValidationName
 let inputName = document.querySelector(".fill__contact-name");
 let validateName = false;
+function validationNameLocalStorage() {
+  if (data.name) {
+    validateName = true;
+  }
+}
 function validationName() {
   let valueName = data.name;
   let paragraphName = document.querySelector(".js-validationName");
@@ -28,6 +33,11 @@ inputName.addEventListener("blur", validationName);
 //ValidationJob
 let inputJob = document.querySelector(".fill__contact-role");
 let validateJob = false;
+function validationJobLocalStorage() {
+  if (data.job) {
+    validateJob = true;
+  }
+}
 function validationJob() {
   let valueJob = data.job;
   let paragraphJob = document.querySelector(".js-validationJob");
@@ -51,6 +61,11 @@ let fileTypes = [
 ];
 let validationFileType = (file) => fileTypes.includes(file.type);
 let validatePhoto = false;
+function validationPhotoLocalStorage() {
+  if (data.photo) {
+    validatePhoto = true;
+  }
+}
 function validationPhoto(event) {
   let pNotFound = document.querySelector(".js-validationPhoto");
   let pNotValid = document.querySelector(".js-validationPhotoTwo");
@@ -78,6 +93,11 @@ inputPhoto.addEventListener("change", validationPhoto);
 //ValidationEmail
 let inputEmail = document.querySelector(".fill__contact-email");
 let validateEmail = false;
+function validationEmailLocalStorage() {
+  if (data.email) {
+    validateEmail = true;
+  }
+}
 function validationEmail() {
   let valueEmail = data.email;
   let regexEmail = valueEmail.match(
@@ -96,6 +116,11 @@ inputEmail.addEventListener("blur", validationEmail);
 //ValidationPhone
 let inputPhone = document.querySelector(".fill__contact-phone");
 let validatePhone = false;
+function validationPhoneLocalStorage() {
+  if (data.phone) {
+    validatePhone = true;
+  }
+}
 function validationPhone() {
   let valuePhone = data.phone;
   let regexPhone = valuePhone.match(/^[0-9]+$/);
@@ -112,6 +137,11 @@ inputPhone.addEventListener("blur", validationPhone);
 //ValidationLinkedin
 let inputLinkedin = document.querySelector(".fill__contact-linkedin");
 let validateLinkedin = false;
+function validationLinkedinLocalStorage() {
+  if (data.linkedin) {
+    validateLinkedin = true;
+  }
+}
 function validationLinkedin() {
   let valueLinkedin = data.linkedin;
   let paragraphLinkedin = document.querySelector(".js-validationLinkedin ");
@@ -127,6 +157,11 @@ inputLinkedin.addEventListener("blur", validationLinkedin);
 //ValidationGitHub
 let inputGithub = document.querySelector(".fill__contact-github");
 let validateGithub = false;
+function validationGithubLocalStorage() {
+  if (data.github) {
+    validateGithub = true;
+  }
+}
 function validationGithub() {
   let valueGithub = data.github;
   let paragraphGithub = document.querySelector(".js-validationGithub ");
