@@ -1,5 +1,7 @@
-// let anclaTwitter = document.querySelector(".js-aTwitter");
-// function createAncla() {
-//   anclaTwitter.setAttribute("href","https://twitter.com/intent/tweet?text=);
-// }
-// encodeURIComponent(data.cardURL);
+let anclaTwitter = document.querySelector(".js-aTwitter");
+let shareURLTwitter = "https://twitter.com/intent/tweet?text=";
+
+function createAncla(cardURL) {
+  let encodedURL = encodeURIComponent(cardURL);
+  anclaTwitter.setAttribute("href", shareURLTwitter + encodedURL);
+}

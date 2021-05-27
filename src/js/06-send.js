@@ -18,6 +18,7 @@ function handleClickCreate(ev) {
         //   responseElement.classList.remove("none");
         cardCreated.classList.remove("none");
         createButton.classList.add("none");
+        createAncla(data.cardURL);
       }
     })
     .catch(() => {
