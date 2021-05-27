@@ -11,7 +11,7 @@ let messageFill = document.querySelector(".js-tooltipFill");
 //COLLAPSE SHARE//
 let selectionShare = document.querySelector(".js-share");
 let selectionShareButton = document.querySelector(".js-shareButton");
-//let messageShare = document.querySelector(".js-tooltipShare");
+let messageShare = document.querySelector(".js-tooltipShare");
 
 //CARD PROFILE//
 

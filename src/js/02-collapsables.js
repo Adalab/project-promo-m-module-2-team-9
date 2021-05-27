@@ -9,28 +9,36 @@ selectionDesignButton.addEventListener("click", collapseValidationDesign);
 function collapseValidationFill(e) {
   if (validationDesign === false) {
     messageFill.classList.toggle("none");
-    messageFill.style.top = e.clientY + "px";
-    messageFill.style.left = e.clientX + "px";
+    messageFill.style.top = e.pageY - 15 + "px";
     setTimeout(function () {
       messageFill.classList.toggle("none");
-    }, 3000);
+    }, 5000);
   } else {
     selectionFill.classList.toggle("none");
     selectionFillButton.classList.toggle("arrowPointer");
   }
 }
-selectionFillButton.addEventListener("click", validateDesignSection);
-selectionFillButton.addEventListener("click", collapseValidationFill);
+selectionFillButton.addEventListener("click", function (e) {
+  validateDesignSection();
+  collapseValidationFill();
+});
 
-function collapseValidationShare() {
-  selectionShare.classList.toggle("none");
-  selectionShareButton.classList.toggle("arrowPointer");
+function collapseValidationShare(e) {
+  //   selectionShare.classList.toggle("none");
+  //   selectionShareButton.classList.toggle("arrowPointer");
+  // }
+  if (validationDesign === false || validationFill === false) {
+    messageShare.classList.toggle("none");
+    messageShare.style.top = e.pageY - 25 + "px";
+    setTimeout(function () {
+      messageShare.classList.toggle("none");
+    }, 5000);
+  } else {
+    selectionShare.classList.toggle("none");
+    selectionShareButton.classList.toggle("arrowPointer");
+  }
 }
-//if (validationDesign === false || validationFill === false) {
-//messageShare.classList.toggle("none");
-//} else {
-//selectionShare.classList.toggle("none");
-//selectionShareButton.classList.toggle("arrowPointer");
-//}
-//}
-selectionShareButton.addEventListener("click", collapseValidationShare);
+selectionShareButton.addEventListener("click", function (e) {
+  validateFillSection();
+  collapseValidationShare();
+});

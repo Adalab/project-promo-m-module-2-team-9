@@ -1,7 +1,14 @@
 function changedForm(ev) {
   const inputNameChange = ev.target.name;
   const changedValue = ev.target.value;
-  data[inputNameChange] = changedValue;
+  if (inputNameChange === "linkedin") {
+    data[inputNameChange] = "https://www.linkedin.com/in/" + changedValue;
+  } else if (inputNameChange === "github") {
+    data[inputNameChange] = "https://github.com/" + changedValue;
+  } else {
+    data[inputNameChange] = changedValue;
+  }
+  console.log(data);
 }
 
 function refreshData() {
