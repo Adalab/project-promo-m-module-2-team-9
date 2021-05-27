@@ -21,6 +21,7 @@ function handleClickCreate(ev) {
       }
 
       cardCreated.classList.remove("none");
+      anclaTwitter.classList.remove("none");
     })
     .catch(() => {
       responseElement.innerHTML = "Inténtalo más tarde.";
