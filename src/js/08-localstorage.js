@@ -1,6 +1,5 @@
 let dataSave = [];
 dataSave = JSON.parse(localStorage.getItem("profile"));
-
 function printAfterReload() {
   if (dataSave !== null) {
     refreshData2();
@@ -23,6 +22,36 @@ function refreshData2() {
   previewLinkedinElement.href =
     "https://www.linkedin.com/in/" + `${dataSave.linkedin}`;
   previewGithubElement.href = "https://github.com/" + `${dataSave.github}`;
+
+  const checked = dataSave.palette;
+
+  if (checked === "1") {
+    previewNameElemento.style.color = "#114e4e";
+    profileName.style.borderLeft = "#438792 solid 5px";
+
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#a2deaf solid 2px";
+      circleSocialnetwork[i].style.color = "#114e4e";
+    }
+  }
+
+  if (checked === "2") {
+    previewNameElemento.style.color = "#420101";
+    profileName.style.borderLeft = "#bd1010 solid 5px";
+
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#E95626 solid 2px";
+      circleSocialnetwork[i].style.color = "#420101";
+    }
+  }
+  if (checked === "3") {
+    previewNameElemento.style.color = "#3e5b65";
+    profileName.style.borderLeft = "#eab052 solid 5px";
+    for (let i = 0; i < circleSocialnetwork.length; i++) {
+      circleSocialnetwork[i].style.border = "#a0c0cf solid 2px";
+      circleSocialnetwork[i].style.color = "#3e5b65";
+    }
+  }
 }
 
 printAfterReload();

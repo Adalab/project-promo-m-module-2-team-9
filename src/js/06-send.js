@@ -25,7 +25,6 @@ function handleClickCreate(ev) {
       responseElement.innerHTML = "Inténtalo más tarde.";
       //   responseElement.classList.remove("none");
     });
-
   localStorage.setItem("profile", JSON.stringify(data));
 }
 
