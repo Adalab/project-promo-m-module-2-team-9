@@ -1,12 +1,28 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+#APLICACIÓN PARA LA CREACIÓN DE TARJETAS
 
-# Adalab web starter kit
+En este proyecto vamos a realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Lo bueno de este proyecto es que será una herramienta de la que os podréis beneficiar. Será una aplicación web interactiva creada por vosotras y que podéis usar para crear vuestras propias tarjetas de visita profesionales.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+##Especificaciones
+En el desarrollo de esta aplicación web usaremos las siguientes tecnologías:
+   Uso avanzado de formularios HTML
+   Maquetación usando CSS avanzado, como flex y grid
+   Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first
+   Gestión de eventos en el navegador (al hacer click, pasa x, etc.)
+   Acceso y envío de datos a un servidor
+   Almacenamiento en local usando LocalStorage
+   Uso de git para el control de versiones del proyecto
+   Publicación del resultado en Internet usando GitHub Pages
+   El proyecto consta de 2 páginas:
+   Una página landing de bienvenida
+   Una página con la aplicación de crear tarjetas
+   La aplicación funciona siguiendo estos pasos:
+   Permitir al usuario elegir el estilo de la tarjeta, eligiendo paleta de colores
+   Permitir al usuario que, mediante la introducción de información en un formulario, este texto se muestre maquetado automáticamente en un cuadro similar a una tarjeta de visita, que será la muestra del resultado final
+   Permitir que el usuario pueda crear una web con su tarjeta y compartirla por Twitter.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Este proyecto incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+Hay 3 tipos de ficheros y carpetas:
 
 - Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
 - La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
@@ -14,14 +30,11 @@ En el Kit hay 3 tipos de ficheros y carpetas:
 
 ## Guía de inicio rápido
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/)
 
 ### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
+1. **Copia todos los ficheros**  en la carpeta raíz de tu repositorio.
    - Recuerda que debes copiar **también los ficheros ocultos**.
    - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
 1. **Abre una terminal** en la carpeta raíz de tu repositorio.
@@ -33,7 +46,8 @@ npm install
 
 ### Pasos para arrancar el proyecto:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. 
+Para ello ejecuta el comando:
 
 ```bash
 npm start
@@ -113,11 +127,6 @@ src
 
 > **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
 
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
 
 ## Falta algo?
 
